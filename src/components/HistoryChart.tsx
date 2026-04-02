@@ -307,6 +307,12 @@ export function HistoryChart({ observations }: HistoryChartProps) {
           areaStyle: {
             opacity: 0.12,
           },
+          markLine: {
+            symbol: 'none',
+            label: { show: false },
+            lineStyle: { color: '#b9a993', type: 'dashed' },
+            data: [{ yAxis: 10 }],
+          },
         },
         {
           name: 'Wind Speed',

@@ -13,6 +13,7 @@ import { formatObservationTime, formatValue } from '../lib/format'
 import type { DataManifest, Observation, RangePreset } from '../types'
 
 const PRESETS: RangePreset[] = ['24h', '72h', '7d', '30d', 'all']
+const AUTO_REFRESH_MS = 5 * 60 * 1000
 
 type LoadState =
   | { status: 'loading' }
@@ -21,7 +22,18 @@ type LoadState =
 
 export function ConditionsDashboard() {
   const [preset, setPreset] = useState<RangePreset>('7d')
+  const [refreshTick, setRefreshTick] = useState(0)
   const [state, setState] = useState<LoadState>({ status: 'loading' })
+
+  useEffect(() => {
+    const intervalId = window.setInterval(() => {
+      setRefreshTick((current) => current + 1)
+    }, AUTO_REFRESH_MS)
+
+    return () => {
+      window.clearInterval(intervalId)
+    }
+  }, [])
 
   useEffect(() => {
     let cancelled = false
@@ -54,7 +66,7 @@ export function ConditionsDashboard() {
     return () => {
       cancelled = true
     }
-  }, [preset])
+  }, [preset, refreshTick])
 
   const deferredObservations = useDeferredValue(
     state.status === 'ready' ? state.observations : [],
