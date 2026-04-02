@@ -21,7 +21,7 @@ jobs:
         id: check_window
         run: |
           MINUTE=$(date +%M)
-          # Sync window: minutes 50, 55, 00, 05 (10 min before hour until 20 min after, 4 tries)
+          if [[ "$MINUTE" =~ ^(50|55|00|05|10|15)$ ]]; then
           if [[ "$MINUTE" =~ ^(50|55|00|05)$ ]]; then
             echo "in_window=true" >> $GITHUB_OUTPUT
             echo "Sync window active (minute: $MINUTE)"
