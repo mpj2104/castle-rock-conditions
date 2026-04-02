@@ -1,9 +1,6 @@
 name: Sync Synoptic Data
 
 on:
-  schedule:
-    # Run once per hour near expected station update time.
-    - cron: '58 * * * *'
   workflow_dispatch:
 
 concurrency:
