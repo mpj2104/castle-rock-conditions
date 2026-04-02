@@ -16,6 +16,26 @@ const PRESETS: RangePreset[] = ['24h', '72h', '7d', '30d', 'all']
 const AUTO_REFRESH_MS = 5 * 60 * 1000
 const BANNER_IMAGES = ['crsp-hands.png', 'crsp-hands-2.png', 'crsp-hands-3.png']
 const IMAGE_BASE = `${import.meta.env.BASE_URL}images/`
+const RAIN_WINDOW_MS = 72 * 60 * 60 * 1000
+
+type ClimbingStatus = 'green' | 'red' | 'neutral'
+
+function getClimbingStatus(observations: Observation[], latestObservation: Observation | null): ClimbingStatus {
+  if (!latestObservation || latestObservation.fuelMoisturePct === null) return 'neutral'
+
+  const fuelMoisturePct = latestObservation.fuelMoisturePct
+  const latestTime = new Date(latestObservation.timestamp).getTime()
+  const cutoff = latestTime - RAIN_WINDOW_MS
+
+  const lastRainObs = [...observations].reverse().find(
+    (obs) => obs.hourlyPrecipIn !== null && obs.hourlyPrecipIn > 0,
+  )
+  const rainedInLast72h = lastRainObs != null && new Date(lastRainObs.timestamp).getTime() >= cutoff
+
+  if (rainedInLast72h && fuelMoisturePct >= 10) return 'red'
+  if (!rainedInLast72h && fuelMoisturePct < 10) return 'green'
+  return 'neutral'
+}
 
 type LoadState =
   | { status: 'loading' }
@@ -78,6 +98,11 @@ export function ConditionsDashboard() {
     return state.status === 'ready' ? getLatestObservation(state.observations) : null
   }, [state])
 
+  const climbingStatus = useMemo<ClimbingStatus>(() => {
+    if (state.status !== 'ready') return 'neutral'
+    return getClimbingStatus(state.observations, latestObservation)
+  }, [state, latestObservation])
+
   if (state.status === 'loading') {
     return (
       <main className="app-shell">
@@ -103,6 +128,11 @@ export function ConditionsDashboard() {
     )
   }
 
+  const statusTooltip =
+    climbingStatus === 'green' ? 'No rain in 72h AND fuel moisture < 10%'
+    : climbingStatus === 'red' ? 'Rained within 72h AND fuel moisture ≥ 10%'
+    : 'Mixed signals or insufficient data'
+
   return (
     <main className="app-shell">
       <TitleBanner />
@@ -119,6 +149,12 @@ export function ConditionsDashboard() {
           >
             NOAA BNDC1
           </a>
+          <span
+            className={`status-dot status-dot--${climbingStatus}`}
+            title={statusTooltip}
+            aria-label={statusTooltip}
+            role="img"
+          />
         </article>
 
         <SummaryCard
@@ -173,7 +209,9 @@ export function ConditionsDashboard() {
 function TitleBanner() {
   return (
     <section className="title-banner" aria-label="Page title">
-      <h1>Castle Rock Conditions</h1>
+      <div className="title-banner-text">
+        <h1>Castle Rock Conditions</h1>
+      </div>
       <div className="title-banner-art" aria-hidden="true">
         {BANNER_IMAGES.map((file) => (
           <img key={file} src={`${IMAGE_BASE}${file}`} alt="" />

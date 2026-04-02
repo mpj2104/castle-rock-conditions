@@ -71,11 +71,3 @@ export function filterObservations(observations: Observation[], start: Date | nu
 export function getLatestObservation(observations: Observation[]): Observation | null {
   return observations.length > 0 ? observations[observations.length - 1] : null
 }
-
-export function isPrimeWindow(observation: Observation | null): boolean {
-  if (!observation || observation.temperatureF === null || observation.humidityPct === null) {
-    return false
-  }
-
-  return Math.abs(observation.temperatureF - 60) <= 4 && Math.abs(observation.humidityPct - 35) <= 8
-}

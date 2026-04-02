@@ -65,12 +65,41 @@ button {
   margin: 2px 0 18px;
 }
 
+.title-banner-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
 .title-banner h1 {
   margin: 0;
   font-family: var(--display);
   font-size: clamp(1.8rem, 3.8vw, 3.1rem);
   line-height: 1.08;
   letter-spacing: 0.02em;
+}
+
+.status-dot {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.status-dot--green {
+  background: #3a9e6e;
+  box-shadow: 0 0 8px rgba(58, 158, 110, 0.5);
+}
+
+.status-dot--red {
+  background: #c94038;
+  box-shadow: 0 0 8px rgba(201, 64, 56, 0.5);
+}
+
+.status-dot--neutral {
+  background: var(--muted);
+  opacity: 0.45;
 }
 
 .title-banner-art {
@@ -165,19 +194,22 @@ button {
 }
 
 .snapshot-card {
-  padding: 18px 20px;
+  padding: 22px;
   border-radius: 22px;
-  display: grid;
-  gap: 8px;
+}
+
+.snapshot-card .station-link {
+  display: block;
+  margin-top: 8px;
+}
+
+.snapshot-card .status-dot {
+  margin-top: 8px;
 }
 
 .snapshot-card strong {
   font-family: var(--display);
   font-size: 1.25rem;
-}
-
-.latest-card {
-  gap: 10px;
 }
 
 .station-link {
