@@ -2,13 +2,17 @@ name: Sync Synoptic Data
 
 on:
   schedule:
-    # Every 5 minutes
-    - cron: '*/5 * * * *'
+    # Retry around the hour when BNDC1 usually updates.
+    - cron: '50,55 * * * *'
+    - cron: '0,5,10,15 * * * *'
   workflow_dispatch:
 
 concurrency:
   group: synoptic-sync
   cancel-in-progress: true
+
+permissions:
+  contents: write
 
 jobs:
   sync:
@@ -17,36 +21,20 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Check if in sync window
-        id: check_window
-        run: |
-          MINUTE=$(date +%M)
-          if [[ "$MINUTE" =~ ^(50|55|00|05|10|15)$ ]]; then
-          if [[ "$MINUTE" =~ ^(50|55|00|05)$ ]]; then
-            echo "in_window=true" >> $GITHUB_OUTPUT
-            echo "Sync window active (minute: $MINUTE)"
-          else
-            echo "in_window=false" >> $GITHUB_OUTPUT
-          fi
-
       - name: Setup Node.js
-        if: steps.check_window.outputs.in_window == 'true'
         uses: actions/setup-node@v4
         with:
           node-version: '20'
 
       - name: Install dependencies
-        if: steps.check_window.outputs.in_window == 'true'
         run: npm ci
 
       - name: Fetch recent data
-        if: steps.check_window.outputs.in_window == 'true'
         env:
           SYNOPTIC_API_TOKEN: ${{ secrets.SYNOPTIC_API_TOKEN }}
         run: npm run sync:synoptic -- --recent=1440
 
       - name: Check for new data
-        if: steps.check_window.outputs.in_window == 'true'
         id: check_changes
         run: |
           if git diff --quiet public/data/manifest.json; then
@@ -56,7 +44,7 @@ jobs:
           fi
 
       - name: Commit and push data
-        if: steps.check_window.outputs.in_window == 'true' && steps.check_changes.outputs.has_changes == 'true'
+        if: steps.check_changes.outputs.has_changes == 'true'
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
