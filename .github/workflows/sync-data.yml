@@ -3,8 +3,7 @@ name: Sync Synoptic Data
 on:
   schedule:
     # Retry around the hour when BNDC1 usually updates.
-    - cron: '50,55 * * * *'
-    - cron: '0,5,10,15 * * * *'
+    - cron: '0,5,10,15,50,55 * * * *'
   workflow_dispatch:
 
 concurrency:
