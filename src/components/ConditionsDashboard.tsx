@@ -31,7 +31,10 @@ export function ConditionsDashboard() {
         const manifest = await loadManifest()
         const start = getPresetStart(preset, manifest.latestObservationAt)
         const files = getRequiredPartitions(manifest, start)
-        const observations = filterObservations(await loadObservations(files), start)
+        const observations = filterObservations(
+          await loadObservations(files, manifest.generatedAt),
+          start,
+        )
 
         if (!cancelled) {
           setState({ status: 'ready', manifest, observations })

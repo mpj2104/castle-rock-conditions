@@ -7,8 +7,15 @@ const PRESET_DURATIONS: Record<Exclude<RangePreset, 'all'>, number> = {
   '30d': 30 * 24 * 60 * 60 * 1000,
 }
 
+function withCacheBust(path: string, token: string): string {
+  const separator = path.includes('?') ? '&' : '?'
+  return `${path}${separator}v=${encodeURIComponent(token)}`
+}
+
 export async function loadManifest(): Promise<DataManifest> {
-  const response = await fetch('./data/manifest.json')
+  const response = await fetch(withCacheBust('./data/manifest.json', Date.now().toString()), {
+    cache: 'no-store',
+  })
   if (!response.ok) {
     throw new Error('Failed to load data manifest.')
   }
@@ -34,10 +41,12 @@ export function getRequiredPartitions(manifest: DataManifest, start: Date | null
     .map((partition) => partition.file)
 }
 
-export async function loadObservations(files: string[]): Promise<Observation[]> {
+export async function loadObservations(files: string[], versionToken: string): Promise<Observation[]> {
   const responses = await Promise.all(
     files.map(async (file) => {
-      const response = await fetch(`./data/observations/${file}`)
+      const response = await fetch(withCacheBust(`./data/observations/${file}`, versionToken), {
+        cache: 'no-store',
+      })
       if (!response.ok) {
         throw new Error(`Failed to load observation partition ${file}.`)
       }
