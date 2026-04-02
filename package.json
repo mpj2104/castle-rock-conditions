@@ -11,6 +11,7 @@
     "build:data": "node scripts/build-manifest.mjs",
     "sync:sample": "node scripts/generate-sample-data.mjs",
     "build": "tsc -b && vite build",
+    "build:pages": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "validate:data": "node scripts/build-manifest.mjs --check"
