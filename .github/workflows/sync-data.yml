@@ -21,6 +21,11 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
+      - name: Log run time (Pacific)
+        run: |
+          echo "Run timestamp (UTC): $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
+          TZ=America/Los_Angeles date +"Run timestamp (Pacific): %Y-%m-%d %H:%M:%S %Z"
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
