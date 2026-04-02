@@ -14,6 +14,7 @@ import type { DataManifest, Observation, RangePreset } from '../types'
 
 const PRESETS: RangePreset[] = ['24h', '72h', '7d', '30d', 'all']
 const AUTO_REFRESH_MS = 5 * 60 * 1000
+const BANNER_IMAGES = ['crsp-hands.png', 'crsp-hands-2.png', 'crsp-hands-3.png']
 
 type LoadState =
   | { status: 'loading' }
@@ -79,6 +80,7 @@ export function ConditionsDashboard() {
   if (state.status === 'loading') {
     return (
       <main className="app-shell">
+        <TitleBanner />
         <section className="hero-panel loading-panel">
           <p className="eyebrow">Castle Rock Conditions</p>
           <h1>Loading station history and chart partitions.</h1>
@@ -90,6 +92,7 @@ export function ConditionsDashboard() {
   if (state.status === 'error') {
     return (
       <main className="app-shell">
+        <TitleBanner />
         <section className="hero-panel loading-panel">
           <p className="eyebrow">Castle Rock Conditions</p>
           <h1>Data load failed.</h1>
@@ -101,6 +104,8 @@ export function ConditionsDashboard() {
 
   return (
     <main className="app-shell">
+      <TitleBanner />
+
       <section className="summary-grid">
         <article className="summary-card snapshot-card latest-card">
           <p className="control-label">Latest reading</p>
@@ -161,6 +166,19 @@ export function ConditionsDashboard() {
         <HistoryChart observations={deferredObservations} />
       </section>
     </main>
+  )
+}
+
+function TitleBanner() {
+  return (
+    <section className="title-banner" aria-label="Page title">
+      <h1>Castle Rock Conditions</h1>
+      <div className="title-banner-art" aria-hidden="true">
+        {BANNER_IMAGES.map((file) => (
+          <img key={file} src={`/images/${file}`} alt="" />
+        ))}
+      </div>
+    </section>
   )
 }
 
