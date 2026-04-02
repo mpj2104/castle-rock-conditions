@@ -1,0 +1,4 @@
+- Use Synoptic as the primary weather source and keep the frontend fully static.
+- Store API secrets only in environment variables or GitHub Actions secrets, never in client code.
+- Keep observation history partitioned by month under public/data/observations.
+- Preserve the dashboard focus on Castle Rock climbing decisions: temperature, humidity, fuel moisture, wind speed, and wind direction.

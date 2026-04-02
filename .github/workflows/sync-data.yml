@@ -1,0 +1,65 @@
+name: Sync Synoptic Data
+
+on:
+  schedule:
+    # Every 5 minutes
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: synoptic-sync
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Check if in sync window
+        id: check_window
+        run: |
+          MINUTE=$(date +%M)
+          # Sync window: minutes 50, 55, 00, 05 (10 min before hour until 20 min after, 4 tries)
+          if [[ "$MINUTE" =~ ^(50|55|00|05)$ ]]; then
+            echo "in_window=true" >> $GITHUB_OUTPUT
+            echo "Sync window active (minute: $MINUTE)"
+          else
+            echo "in_window=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Setup Node.js
+        if: steps.check_window.outputs.in_window == 'true'
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        if: steps.check_window.outputs.in_window == 'true'
+        run: npm ci
+
+      - name: Fetch recent data
+        if: steps.check_window.outputs.in_window == 'true'
+        env:
+          SYNOPTIC_API_TOKEN: ${{ secrets.SYNOPTIC_API_TOKEN }}
+        run: npm run sync:synoptic -- --recent=1440
+
+      - name: Check for new data
+        if: steps.check_window.outputs.in_window == 'true'
+        id: check_changes
+        run: |
+          if git diff --quiet public/data/manifest.json; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and push data
+        if: steps.check_window.outputs.in_window == 'true' && steps.check_changes.outputs.has_changes == 'true'
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add public/data/
+          git commit -m "Sync Synoptic data: $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
+          git push

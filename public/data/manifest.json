@@ -1,0 +1,92 @@
+{
+  "stationId": "BNDC1",
+  "stationName": "Ben Lomond RAWS",
+  "source": "Synoptic Weather API archive",
+  "timezone": "America/Los_Angeles",
+  "generatedAt": "2026-04-01T22:08:27.062Z",
+  "latestObservationAt": "2026-04-01T21:50:00Z",
+  "metrics": {
+    "temperatureTargetF": 60,
+    "humidityTargetPct": 35
+  },
+  "partitions": [
+    {
+      "file": "2025-04.json",
+      "start": "2025-04-01T22:50:00Z",
+      "end": "2025-04-30T23:50:00Z",
+      "count": 696
+    },
+    {
+      "file": "2025-05.json",
+      "start": "2025-05-01T00:50:00Z",
+      "end": "2025-05-31T23:50:00Z",
+      "count": 744
+    },
+    {
+      "file": "2025-06.json",
+      "start": "2025-06-01T00:50:00Z",
+      "end": "2025-06-30T23:50:00Z",
+      "count": 719
+    },
+    {
+      "file": "2025-07.json",
+      "start": "2025-07-01T00:50:00Z",
+      "end": "2025-07-31T23:50:00Z",
+      "count": 743
+    },
+    {
+      "file": "2025-08.json",
+      "start": "2025-08-01T00:50:00Z",
+      "end": "2025-08-31T23:50:00Z",
+      "count": 742
+    },
+    {
+      "file": "2025-09.json",
+      "start": "2025-09-01T00:50:00Z",
+      "end": "2025-09-30T23:50:00Z",
+      "count": 720
+    },
+    {
+      "file": "2025-10.json",
+      "start": "2025-10-01T00:50:00Z",
+      "end": "2025-10-31T23:50:00Z",
+      "count": 743
+    },
+    {
+      "file": "2025-11.json",
+      "start": "2025-11-01T00:50:00Z",
+      "end": "2025-11-30T23:50:00Z",
+      "count": 719
+    },
+    {
+      "file": "2025-12.json",
+      "start": "2025-12-01T00:50:00Z",
+      "end": "2025-12-31T23:50:00Z",
+      "count": 744
+    },
+    {
+      "file": "2026-01.json",
+      "start": "2026-01-01T00:50:00Z",
+      "end": "2026-01-31T23:50:00Z",
+      "count": 744
+    },
+    {
+      "file": "2026-02.json",
+      "start": "2026-02-01T00:50:00Z",
+      "end": "2026-02-28T23:50:00Z",
+      "count": 651
+    },
+    {
+      "file": "2026-03.json",
+      "start": "2026-03-01T00:50:00Z",
+      "end": "2026-03-31T23:50:00Z",
+      "count": 744
+    },
+    {
+      "file": "2026-04.json",
+      "start": "2026-04-01T00:50:00Z",
+      "end": "2026-04-01T21:50:00Z",
+      "count": 22
+    }
+  ]
+}
