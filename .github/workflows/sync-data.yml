@@ -2,13 +2,13 @@ name: Sync Synoptic Data
 
 on:
   schedule:
-    # Run once at the top of each hour (UTC), 24 times per day.
-    - cron: '0 * * * *'
+    # Run once per hour near expected station update time.
+    - cron: '58 * * * *'
   workflow_dispatch:
 
 concurrency:
   group: synoptic-sync
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 permissions:
   contents: write
