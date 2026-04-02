@@ -15,6 +15,7 @@ import type { DataManifest, Observation, RangePreset } from '../types'
 const PRESETS: RangePreset[] = ['24h', '72h', '7d', '30d', 'all']
 const AUTO_REFRESH_MS = 5 * 60 * 1000
 const BANNER_IMAGES = ['crsp-hands.png', 'crsp-hands-2.png', 'crsp-hands-3.png']
+const IMAGE_BASE = `${import.meta.env.BASE_URL}images/`
 
 type LoadState =
   | { status: 'loading' }
@@ -175,7 +176,7 @@ function TitleBanner() {
       <h1>Castle Rock Conditions</h1>
       <div className="title-banner-art" aria-hidden="true">
         {BANNER_IMAGES.map((file) => (
-          <img key={file} src={`/images/${file}`} alt="" />
+          <img key={file} src={`${IMAGE_BASE}${file}`} alt="" />
         ))}
       </div>
     </section>
