@@ -1,11 +1,13 @@
 import { mkdir, readdir, readFile, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import process from 'node:process'
+import { fileURLToPath } from 'node:url'
 import { config as loadEnv } from 'dotenv'
 
 loadEnv({ quiet: true })
 
-export const rootDir = '/Users/mpjiang/Projects/castlerock-conditions'
+const scriptDir = path.dirname(fileURLToPath(import.meta.url))
+export const rootDir = path.resolve(scriptDir, '..')
 export const observationsDir = path.join(rootDir, 'public', 'data', 'observations')
 export const manifestPath = path.join(rootDir, 'public', 'data', 'manifest.json')
 
