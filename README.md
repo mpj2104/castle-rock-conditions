@@ -1,12 +1,10 @@
-# Castle Rock Conditions
+# Castle Rock Conditions Dashboard
 
 <p>
-	<img src="public/images/crsp-hands.png" alt="Castle Rock hand image 1" height="180" />
-	<img src="public/images/crsp-hands-2.png" alt="Castle Rock hand image 2" height="180" />
-	<img src="public/images/crsp-hands-3.png" alt="Castle Rock hand image 3" height="180" />
+	<img src="public/images/crsp-hands.png" alt="Castle Rock hand image 1" height="300" />
 </p>
 
-Static React dashboard for checking Castle Rock bouldering conditions from the Ben Lomond RAWS station. The site is built to show temperature, humidity, fuel moisture, wind speed, and wind direction history in an interactive plot with target lines at 60 F and 35% humidity.
+This is a static React dashboard that checks Castle Rock climbing conditions from the [Ben Lomond station on the NOAA site](https://forecast.weather.gov/MapClick.php?lon=-122.10464186850001&lat=37.23500005365938#.ZGzoAuzMKDX). The site is built to show temperature, humidity, fuel moisture, wind speed, and precipitation history in an interactive plot. This site was created entirely via vibe coding with the GPT-5.3-Codex model.
 
 ## Local Development
 
