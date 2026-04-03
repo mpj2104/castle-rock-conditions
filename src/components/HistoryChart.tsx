@@ -210,6 +210,8 @@ export function HistoryChart({ observations }: HistoryChartProps) {
           name: 'Temp F',
           nameLocation: 'middle',
           nameGap: 50,
+          min: 0,
+          max: 100,
           axisLabel: { color: '#645d52' },
           splitLine: { show: false },
         },
@@ -310,7 +312,7 @@ export function HistoryChart({ observations }: HistoryChartProps) {
           markLine: {
             symbol: 'none',
             label: { show: false },
-            lineStyle: { color: '#b9a993', type: 'dashed' },
+            lineStyle: { color: '#45708f', type: 'dashed' },
             data: [{ yAxis: 10 }],
           },
         },
