@@ -3000,7 +3000,7 @@
     "windGustMph": 16,
     "windDirectionDeg": 198,
     "windDirectionCardinal": "SSW",
-    "hourlyPrecipIn": 0.04
+    "hourlyPrecipIn": 0
   },
   {
     "timestamp": "2026-04-10T15:50:00Z",
@@ -3286,6 +3286,19 @@
     "windGustMph": 14,
     "windDirectionDeg": 211,
     "windDirectionCardinal": "SSW",
+    "hourlyPrecipIn": 0
+  },
+  {
+    "timestamp": "2026-04-11T13:50:00Z",
+    "stationId": "BNDC1",
+    "source": "synoptic",
+    "temperatureF": 45,
+    "humidityPct": 100,
+    "fuelMoisturePct": 26.2,
+    "windSpeedMph": 3,
+    "windGustMph": 12,
+    "windDirectionDeg": 190,
+    "windDirectionCardinal": "S",
     "hourlyPrecipIn": 0
   }
 ]
