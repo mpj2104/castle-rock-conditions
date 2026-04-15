@@ -10,6 +10,7 @@ import {
   parseArgs,
   partitionFilename,
   readPartitionFile,
+  recomputeHourlyPrecipFromAccum,
   requestJson,
   rootDir,
   writePartitionFile,
@@ -156,10 +157,11 @@ async function main() {
     const file = partitionFilename(monthKey)
     const existingEntries = (await readPartitionOrEmpty(file)).filter((entry) => entry.source !== 'sample')
     const mergedEntries = mergeByTimestamp(existingEntries, incomingEntries)
-    await writePartitionFile(file, mergedEntries)
-    totalWritten += mergedEntries.length
+    const mergedWithRecomputedPrecip = recomputeHourlyPrecipFromAccum(mergedEntries)
+    await writePartitionFile(file, mergedWithRecomputedPrecip)
+    totalWritten += mergedWithRecomputedPrecip.length
 
-    console.log(`Updated ${file}: +${incomingEntries.length} fetched, ${mergedEntries.length} total after merge`)
+    console.log(`Updated ${file}: +${incomingEntries.length} fetched, ${mergedWithRecomputedPrecip.length} total after merge`)
   }
 
   const manifestResult = spawnSync('node', ['scripts/build-manifest.mjs'], {

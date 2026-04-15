@@ -9,6 +9,7 @@ import {
   parseArgs,
   partitionFilename,
   readPartitionFile,
+  recomputeHourlyPrecipFromAccum,
   requestJson,
   writePartitionFile,
 } from './utils.mjs'
@@ -78,7 +79,8 @@ async function main() {
     const file = partitionFilename(monthKey)
     const existingEntries = (await readPartitionOrEmpty(file)).filter((entry) => entry.source !== 'sample')
     const mergedEntries = mergeByTimestamp(existingEntries, incomingEntries)
-    await writePartitionFile(file, mergedEntries)
+    const mergedWithRecomputedPrecip = recomputeHourlyPrecipFromAccum(mergedEntries)
+    await writePartitionFile(file, mergedWithRecomputedPrecip)
   }
 
   console.log(`Wrote ${observations.length} observations across ${monthlyGroups.size} partition(s).`)

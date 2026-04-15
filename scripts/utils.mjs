@@ -22,6 +22,12 @@ export const DEFAULT_VARIABLES = [
   'wind_direction',
 ]
 
+const MAX_HOURLY_PRECIP_IN = 5
+
+function roundTo(value, digits = 2) {
+  return Number(value.toFixed(digits))
+}
+
 export function getToken() {
   const token = process.env.SYNOPTIC_API_TOKEN
   if (!token) {
@@ -81,6 +87,32 @@ export function pickSeries(observations, variableName, dateTimes) {
   return observations[key].map((value) => (value === null || value === undefined ? null : Number(value)))
 }
 
+export function recomputeHourlyPrecipFromAccum(observations) {
+  return observations.map((observation, index, allObservations) => {
+    const currentPrecipAccum = observation.precipAccumIn ?? null
+    const previousPrecipAccum = index > 0 ? (allObservations[index - 1].precipAccumIn ?? null) : null
+
+    // Preserve existing values for legacy records that do not yet have precip accumulation stored.
+    if (currentPrecipAccum === null) {
+      return {
+        ...observation,
+        hourlyPrecipIn: observation.hourlyPrecipIn ?? null,
+      }
+    }
+
+    let hourlyPrecipIn = 0
+    if (previousPrecipAccum !== null) {
+      const delta = currentPrecipAccum - previousPrecipAccum
+      hourlyPrecipIn = delta >= 0 && delta <= MAX_HOURLY_PRECIP_IN ? delta : 0
+    }
+
+    return {
+      ...observation,
+      hourlyPrecipIn: roundTo(hourlyPrecipIn, 2),
+    }
+  })
+}
+
 export function normalizeStation(station, source = 'synoptic') {
   const dateTimes = station.OBSERVATIONS.date_time
   const temperatures = pickSeries(station.OBSERVATIONS, 'air_temp', dateTimes)
@@ -95,22 +127,8 @@ export function normalizeStation(station, source = 'synoptic') {
   const windDirection = pickSeries(station.OBSERVATIONS, 'wind_direction', dateTimes)
   const precipitation = pickSeries(station.OBSERVATIONS, 'precip_accum', dateTimes)
 
-  return dateTimes.map((timestamp, index) => {
-    const previousPrecip = index > 0 ? precipitation[index - 1] : null
-    const currentPrecip = precipitation[index]
-
-    let hourlyPrecipIn = null
-    if (currentPrecip !== null) {
-      if (previousPrecip === null) {
-        hourlyPrecipIn = 0
-      } else {
-        const delta = currentPrecip - previousPrecip
-        // BNDC1 precip_accum behaves like an accumulation counter, so only keep realistic hourly increments.
-        hourlyPrecipIn = delta >= 0 && delta <= 5 ? delta : 0
-      }
-
-      hourlyPrecipIn = Number(hourlyPrecipIn.toFixed(2))
-    }
+  const observations = dateTimes.map((timestamp, index) => {
+    const precipAccumIn = precipitation[index] === null ? null : roundTo(precipitation[index], 3)
 
     return {
       timestamp,
@@ -123,9 +141,12 @@ export function normalizeStation(station, source = 'synoptic') {
       windGustMph: windGust[index],
       windDirectionDeg: windDirection[index],
       windDirectionCardinal: cardinalFromDegrees(windDirection[index]),
-      hourlyPrecipIn,
+      precipAccumIn,
+      hourlyPrecipIn: null,
     }
   })
+
+  return recomputeHourlyPrecipFromAccum(observations)
 }
 
 export function groupByMonth(observations) {

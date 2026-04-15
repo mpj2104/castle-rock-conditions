@@ -11,6 +11,7 @@ export type Observation = {
   windGustMph: number | null
   windDirectionDeg: number | null
   windDirectionCardinal: string | null
+  precipAccumIn: number | null
   hourlyPrecipIn: number | null
 }
 

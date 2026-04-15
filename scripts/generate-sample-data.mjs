@@ -30,6 +30,7 @@ function sampleObservation(timestamp, index) {
     windGustMph: Number(windGustMph.toFixed(1)),
     windDirectionDeg: Number(windDirectionDeg.toFixed(0)),
     windDirectionCardinal: cardinalFromDegrees(windDirectionDeg),
+    precipAccumIn: null,
     hourlyPrecipIn,
   }
 }

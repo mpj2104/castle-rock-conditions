@@ -10,6 +10,7 @@
     "windGustMph": 19,
     "windDirectionDeg": 208,
     "windDirectionCardinal": "SSW",
+    "precipAccumIn": 44.06,
     "hourlyPrecipIn": 0
   },
   {
@@ -23,6 +24,7 @@
     "windGustMph": 20,
     "windDirectionDeg": 227,
     "windDirectionCardinal": "SW",
+    "precipAccumIn": 44.06,
     "hourlyPrecipIn": 0
   },
   {
@@ -36,6 +38,7 @@
     "windGustMph": 18,
     "windDirectionDeg": 234,
     "windDirectionCardinal": "SW",
+    "precipAccumIn": 44.06,
     "hourlyPrecipIn": 0
   },
   {
@@ -49,6 +52,7 @@
     "windGustMph": 14.01,
     "windDirectionDeg": 245,
     "windDirectionCardinal": "WSW",
+    "precipAccumIn": 44.06,
     "hourlyPrecipIn": 0
   },
   {
@@ -62,6 +66,7 @@
     "windGustMph": 14.99,
     "windDirectionDeg": 227,
     "windDirectionCardinal": "SW",
+    "precipAccumIn": 44.06,
     "hourlyPrecipIn": 0
   },
   {
@@ -75,6 +80,7 @@
     "windGustMph": 16,
     "windDirectionDeg": 214,
     "windDirectionCardinal": "SW",
+    "precipAccumIn": 44.06,
     "hourlyPrecipIn": 0
   },
   {
@@ -88,6 +94,7 @@
     "windGustMph": 16,
     "windDirectionDeg": 215,
     "windDirectionCardinal": "SW",
+    "precipAccumIn": 44.06,
     "hourlyPrecipIn": 0
   },
   {
@@ -101,6 +108,7 @@
     "windGustMph": 13,
     "windDirectionDeg": 193,
     "windDirectionCardinal": "SSW",
+    "precipAccumIn": 44.06,
     "hourlyPrecipIn": 0
   },
   {
@@ -114,7 +122,8 @@
     "windGustMph": 14.99,
     "windDirectionDeg": 213,
     "windDirectionCardinal": "SSW",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 44.07,
+    "hourlyPrecipIn": 0.01
   },
   {
     "timestamp": "2026-04-01T09:50:00Z",
@@ -127,6 +136,7 @@
     "windGustMph": 14.99,
     "windDirectionDeg": 197,
     "windDirectionCardinal": "SSW",
+    "precipAccumIn": 44.15,
     "hourlyPrecipIn": 0.08
   },
   {
@@ -140,7 +150,8 @@
     "windGustMph": 11,
     "windDirectionDeg": 213,
     "windDirectionCardinal": "SSW",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 44.16,
+    "hourlyPrecipIn": 0.01
   },
   {
     "timestamp": "2026-04-01T11:50:00Z",
@@ -153,6 +164,7 @@
     "windGustMph": 13,
     "windDirectionDeg": 215,
     "windDirectionCardinal": "SW",
+    "precipAccumIn": 44.16,
     "hourlyPrecipIn": 0
   },
   {
@@ -166,7 +178,8 @@
     "windGustMph": 11,
     "windDirectionDeg": 214,
     "windDirectionCardinal": "SW",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 44.19,
+    "hourlyPrecipIn": 0.03
   },
   {
     "timestamp": "2026-04-01T13:50:00Z",
@@ -179,7 +192,8 @@
     "windGustMph": 14.01,
     "windDirectionDeg": 213,
     "windDirectionCardinal": "SSW",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 44.22,
+    "hourlyPrecipIn": 0.03
   },
   {
     "timestamp": "2026-04-01T14:50:00Z",
@@ -192,6 +206,7 @@
     "windGustMph": 12,
     "windDirectionDeg": 217,
     "windDirectionCardinal": "SW",
+    "precipAccumIn": 44.23,
     "hourlyPrecipIn": 0.01
   },
   {
@@ -205,6 +220,7 @@
     "windGustMph": 13,
     "windDirectionDeg": 221,
     "windDirectionCardinal": "SW",
+    "precipAccumIn": 44.23,
     "hourlyPrecipIn": 0
   },
   {
@@ -218,6 +234,7 @@
     "windGustMph": 16,
     "windDirectionDeg": 219,
     "windDirectionCardinal": "SW",
+    "precipAccumIn": 44.23,
     "hourlyPrecipIn": 0
   },
   {
@@ -231,6 +248,7 @@
     "windGustMph": 17,
     "windDirectionDeg": 223,
     "windDirectionCardinal": "SW",
+    "precipAccumIn": 44.23,
     "hourlyPrecipIn": 0
   },
   {
@@ -244,6 +262,7 @@
     "windGustMph": 16,
     "windDirectionDeg": 233,
     "windDirectionCardinal": "SW",
+    "precipAccumIn": 44.23,
     "hourlyPrecipIn": 0
   },
   {
@@ -257,6 +276,7 @@
     "windGustMph": 16,
     "windDirectionDeg": 235,
     "windDirectionCardinal": "SW",
+    "precipAccumIn": 44.23,
     "hourlyPrecipIn": 0
   },
   {
@@ -270,6 +290,7 @@
     "windGustMph": 13,
     "windDirectionDeg": 237,
     "windDirectionCardinal": "WSW",
+    "precipAccumIn": 44.23,
     "hourlyPrecipIn": 0
   },
   {
@@ -283,7 +304,8 @@
     "windGustMph": 17,
     "windDirectionDeg": 231,
     "windDirectionCardinal": "SW",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 44.24,
+    "hourlyPrecipIn": 0.01
   },
   {
     "timestamp": "2026-04-01T22:50:00Z",
@@ -296,7 +318,8 @@
     "windGustMph": 18,
     "windDirectionDeg": 232,
     "windDirectionCardinal": "SW",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 44.35,
+    "hourlyPrecipIn": 0.11
   },
   {
     "timestamp": "2026-04-01T23:50:00Z",
@@ -309,7 +332,8 @@
     "windGustMph": 14.99,
     "windDirectionDeg": 244,
     "windDirectionCardinal": "WSW",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 44.37,
+    "hourlyPrecipIn": 0.02
   },
   {
     "timestamp": "2026-04-02T00:50:00Z",
@@ -322,7 +346,8 @@
     "windGustMph": 13,
     "windDirectionDeg": 244,
     "windDirectionCardinal": "WSW",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 44.38,
+    "hourlyPrecipIn": 0.01
   },
   {
     "timestamp": "2026-04-02T01:50:00Z",
@@ -335,6 +360,7 @@
     "windGustMph": 11,
     "windDirectionDeg": 258,
     "windDirectionCardinal": "WSW",
+    "precipAccumIn": 44.38,
     "hourlyPrecipIn": 0
   },
   {
@@ -348,6 +374,7 @@
     "windGustMph": 12,
     "windDirectionDeg": 248,
     "windDirectionCardinal": "WSW",
+    "precipAccumIn": 44.38,
     "hourlyPrecipIn": 0
   },
   {
@@ -361,6 +388,7 @@
     "windGustMph": 12,
     "windDirectionDeg": 249,
     "windDirectionCardinal": "WSW",
+    "precipAccumIn": 44.38,
     "hourlyPrecipIn": 0
   },
   {
@@ -374,6 +402,7 @@
     "windGustMph": 11,
     "windDirectionDeg": 245,
     "windDirectionCardinal": "WSW",
+    "precipAccumIn": 44.38,
     "hourlyPrecipIn": 0
   },
   {
@@ -387,7 +416,8 @@
     "windGustMph": 9,
     "windDirectionDeg": 249,
     "windDirectionCardinal": "WSW",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 44.39,
+    "hourlyPrecipIn": 0.01
   },
   {
     "timestamp": "2026-04-02T06:50:00Z",
@@ -400,7 +430,8 @@
     "windGustMph": 13,
     "windDirectionDeg": 237,
     "windDirectionCardinal": "WSW",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 44.54,
+    "hourlyPrecipIn": 0.15
   },
   {
     "timestamp": "2026-04-02T07:50:00Z",
@@ -413,7 +444,8 @@
     "windGustMph": 27,
     "windDirectionDeg": 268,
     "windDirectionCardinal": "W",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 44.8,
+    "hourlyPrecipIn": 0.26
   },
   {
     "timestamp": "2026-04-02T08:50:00Z",
@@ -426,7 +458,8 @@
     "windGustMph": 12,
     "windDirectionDeg": 265,
     "windDirectionCardinal": "W",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 44.89,
+    "hourlyPrecipIn": 0.09
   },
   {
     "timestamp": "2026-04-02T09:50:00Z",
@@ -439,7 +472,8 @@
     "windGustMph": 11,
     "windDirectionDeg": 328,
     "windDirectionCardinal": "NNW",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 44.99,
+    "hourlyPrecipIn": 0.1
   },
   {
     "timestamp": "2026-04-02T10:50:00Z",
@@ -452,7 +486,8 @@
     "windGustMph": 14.01,
     "windDirectionDeg": 327,
     "windDirectionCardinal": "NNW",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 45,
+    "hourlyPrecipIn": 0.01
   },
   {
     "timestamp": "2026-04-02T11:50:00Z",
@@ -465,6 +500,7 @@
     "windGustMph": 13,
     "windDirectionDeg": 331,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -478,6 +514,7 @@
     "windGustMph": 14.01,
     "windDirectionDeg": 343,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -491,6 +528,7 @@
     "windGustMph": 14.01,
     "windDirectionDeg": 348,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -504,6 +542,7 @@
     "windGustMph": 17,
     "windDirectionDeg": 2,
     "windDirectionCardinal": "N",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -517,6 +556,7 @@
     "windGustMph": 19,
     "windDirectionDeg": 352,
     "windDirectionCardinal": "N",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -530,6 +570,7 @@
     "windGustMph": 20,
     "windDirectionDeg": 355,
     "windDirectionCardinal": "N",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -543,6 +584,7 @@
     "windGustMph": 20,
     "windDirectionDeg": 350,
     "windDirectionCardinal": "N",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -556,6 +598,7 @@
     "windGustMph": 19,
     "windDirectionDeg": 2,
     "windDirectionCardinal": "N",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -569,6 +612,7 @@
     "windGustMph": 16,
     "windDirectionDeg": 358,
     "windDirectionCardinal": "N",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -582,6 +626,7 @@
     "windGustMph": 15,
     "windDirectionDeg": 348,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -595,6 +640,7 @@
     "windGustMph": 17,
     "windDirectionDeg": 358,
     "windDirectionCardinal": "N",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -608,6 +654,7 @@
     "windGustMph": 16,
     "windDirectionDeg": 358,
     "windDirectionCardinal": "N",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -621,6 +668,7 @@
     "windGustMph": 19,
     "windDirectionDeg": 359,
     "windDirectionCardinal": "N",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -634,6 +682,7 @@
     "windGustMph": 15,
     "windDirectionDeg": 10,
     "windDirectionCardinal": "N",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -647,6 +696,7 @@
     "windGustMph": 17,
     "windDirectionDeg": 9,
     "windDirectionCardinal": "N",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -660,6 +710,7 @@
     "windGustMph": 18,
     "windDirectionDeg": 14,
     "windDirectionCardinal": "NNE",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -673,6 +724,7 @@
     "windGustMph": 17,
     "windDirectionDeg": 27,
     "windDirectionCardinal": "NNE",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -686,6 +738,7 @@
     "windGustMph": 16,
     "windDirectionDeg": 35,
     "windDirectionCardinal": "NE",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -699,6 +752,7 @@
     "windGustMph": 18,
     "windDirectionDeg": 23,
     "windDirectionCardinal": "NNE",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -712,6 +766,7 @@
     "windGustMph": 21,
     "windDirectionDeg": 29,
     "windDirectionCardinal": "NNE",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -725,6 +780,7 @@
     "windGustMph": 20,
     "windDirectionDeg": 19,
     "windDirectionCardinal": "NNE",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -738,6 +794,7 @@
     "windGustMph": 15,
     "windDirectionDeg": 35,
     "windDirectionCardinal": "NE",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -751,6 +808,7 @@
     "windGustMph": 17,
     "windDirectionDeg": 8,
     "windDirectionCardinal": "N",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -764,6 +822,7 @@
     "windGustMph": 15,
     "windDirectionDeg": 26,
     "windDirectionCardinal": "NNE",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -777,6 +836,7 @@
     "windGustMph": 21,
     "windDirectionDeg": 40,
     "windDirectionCardinal": "NE",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -790,6 +850,7 @@
     "windGustMph": 21,
     "windDirectionDeg": 39,
     "windDirectionCardinal": "NE",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -803,6 +864,7 @@
     "windGustMph": 21,
     "windDirectionDeg": 40,
     "windDirectionCardinal": "NE",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -816,6 +878,7 @@
     "windGustMph": 14,
     "windDirectionDeg": 33,
     "windDirectionCardinal": "NNE",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -829,6 +892,7 @@
     "windGustMph": 14,
     "windDirectionDeg": 78,
     "windDirectionCardinal": "ENE",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -842,6 +906,7 @@
     "windGustMph": 16,
     "windDirectionDeg": 55,
     "windDirectionCardinal": "NE",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -855,6 +920,7 @@
     "windGustMph": 12,
     "windDirectionDeg": 65,
     "windDirectionCardinal": "ENE",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -868,6 +934,7 @@
     "windGustMph": 14,
     "windDirectionDeg": 77,
     "windDirectionCardinal": "ENE",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -881,6 +948,7 @@
     "windGustMph": 11,
     "windDirectionDeg": 78,
     "windDirectionCardinal": "ENE",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -894,6 +962,7 @@
     "windGustMph": 11,
     "windDirectionDeg": 50,
     "windDirectionCardinal": "NE",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -907,6 +976,7 @@
     "windGustMph": 12,
     "windDirectionDeg": 22,
     "windDirectionCardinal": "NNE",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -920,6 +990,7 @@
     "windGustMph": 9,
     "windDirectionDeg": 43,
     "windDirectionCardinal": "NE",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -933,6 +1004,7 @@
     "windGustMph": 10,
     "windDirectionDeg": 56,
     "windDirectionCardinal": "NE",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -946,6 +1018,7 @@
     "windGustMph": 9,
     "windDirectionDeg": 82,
     "windDirectionCardinal": "E",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -959,6 +1032,7 @@
     "windGustMph": 7,
     "windDirectionDeg": 60,
     "windDirectionCardinal": "ENE",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -972,6 +1046,7 @@
     "windGustMph": 12,
     "windDirectionDeg": 44,
     "windDirectionCardinal": "NE",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -985,6 +1060,7 @@
     "windGustMph": 8,
     "windDirectionDeg": 62,
     "windDirectionCardinal": "ENE",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -998,6 +1074,7 @@
     "windGustMph": 7,
     "windDirectionDeg": 51,
     "windDirectionCardinal": "NE",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1011,6 +1088,7 @@
     "windGustMph": 6,
     "windDirectionDeg": 67,
     "windDirectionCardinal": "ENE",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1024,6 +1102,7 @@
     "windGustMph": 7,
     "windDirectionDeg": 83,
     "windDirectionCardinal": "E",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1037,6 +1116,7 @@
     "windGustMph": 7,
     "windDirectionDeg": 85,
     "windDirectionCardinal": "E",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1050,6 +1130,7 @@
     "windGustMph": 8,
     "windDirectionDeg": 96,
     "windDirectionCardinal": "E",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1063,6 +1144,7 @@
     "windGustMph": 9,
     "windDirectionDeg": 102,
     "windDirectionCardinal": "ESE",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1076,6 +1158,7 @@
     "windGustMph": 9,
     "windDirectionDeg": 105,
     "windDirectionCardinal": "ESE",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1089,6 +1172,7 @@
     "windGustMph": 8,
     "windDirectionDeg": 110,
     "windDirectionCardinal": "ESE",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1102,6 +1186,7 @@
     "windGustMph": 10,
     "windDirectionDeg": 100,
     "windDirectionCardinal": "E",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1115,6 +1200,7 @@
     "windGustMph": 8,
     "windDirectionDeg": 99,
     "windDirectionCardinal": "E",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1128,6 +1214,7 @@
     "windGustMph": 6,
     "windDirectionDeg": 97,
     "windDirectionCardinal": "E",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1141,6 +1228,7 @@
     "windGustMph": 9,
     "windDirectionDeg": 107,
     "windDirectionCardinal": "ESE",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1154,6 +1242,7 @@
     "windGustMph": 10,
     "windDirectionDeg": 103,
     "windDirectionCardinal": "ESE",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1167,6 +1256,7 @@
     "windGustMph": 10,
     "windDirectionDeg": 113,
     "windDirectionCardinal": "ESE",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1180,6 +1270,7 @@
     "windGustMph": 9,
     "windDirectionDeg": 139,
     "windDirectionCardinal": "SE",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1193,6 +1284,7 @@
     "windGustMph": 12,
     "windDirectionDeg": 112,
     "windDirectionCardinal": "ESE",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1206,6 +1298,7 @@
     "windGustMph": 11,
     "windDirectionDeg": 123,
     "windDirectionCardinal": "ESE",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1219,6 +1312,7 @@
     "windGustMph": 11,
     "windDirectionDeg": 165,
     "windDirectionCardinal": "SSE",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1232,6 +1326,7 @@
     "windGustMph": 12,
     "windDirectionDeg": 230,
     "windDirectionCardinal": "SW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1245,6 +1340,7 @@
     "windGustMph": 9,
     "windDirectionDeg": 205,
     "windDirectionCardinal": "SSW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1258,6 +1354,7 @@
     "windGustMph": 10,
     "windDirectionDeg": 219,
     "windDirectionCardinal": "SW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1271,6 +1368,7 @@
     "windGustMph": 9,
     "windDirectionDeg": 222,
     "windDirectionCardinal": "SW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1284,6 +1382,7 @@
     "windGustMph": 5,
     "windDirectionDeg": 265,
     "windDirectionCardinal": "W",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1297,6 +1396,7 @@
     "windGustMph": 3,
     "windDirectionDeg": 30,
     "windDirectionCardinal": "NNE",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1310,6 +1410,7 @@
     "windGustMph": 5,
     "windDirectionDeg": 44,
     "windDirectionCardinal": "NE",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1323,6 +1424,7 @@
     "windGustMph": 7,
     "windDirectionDeg": 62,
     "windDirectionCardinal": "ENE",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1336,6 +1438,7 @@
     "windGustMph": 6,
     "windDirectionDeg": 85,
     "windDirectionCardinal": "E",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1349,6 +1452,7 @@
     "windGustMph": 7,
     "windDirectionDeg": 95,
     "windDirectionCardinal": "E",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1362,6 +1466,7 @@
     "windGustMph": 7,
     "windDirectionDeg": 88,
     "windDirectionCardinal": "E",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1375,6 +1480,7 @@
     "windGustMph": 8,
     "windDirectionDeg": 97,
     "windDirectionCardinal": "E",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1388,6 +1494,7 @@
     "windGustMph": 9,
     "windDirectionDeg": 96,
     "windDirectionCardinal": "E",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1401,6 +1508,7 @@
     "windGustMph": 11,
     "windDirectionDeg": 100,
     "windDirectionCardinal": "E",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1414,6 +1522,7 @@
     "windGustMph": 11,
     "windDirectionDeg": 106,
     "windDirectionCardinal": "ESE",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1427,6 +1536,7 @@
     "windGustMph": 13,
     "windDirectionDeg": 111,
     "windDirectionCardinal": "ESE",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1440,6 +1550,7 @@
     "windGustMph": 11,
     "windDirectionDeg": 109,
     "windDirectionCardinal": "ESE",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1453,6 +1564,7 @@
     "windGustMph": 15,
     "windDirectionDeg": 115,
     "windDirectionCardinal": "ESE",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1466,6 +1578,7 @@
     "windGustMph": 12,
     "windDirectionDeg": 127,
     "windDirectionCardinal": "SE",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1479,6 +1592,7 @@
     "windGustMph": 12,
     "windDirectionDeg": 113,
     "windDirectionCardinal": "ESE",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1492,6 +1606,7 @@
     "windGustMph": 13,
     "windDirectionDeg": 142,
     "windDirectionCardinal": "SE",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1505,6 +1620,7 @@
     "windGustMph": 10,
     "windDirectionDeg": 207,
     "windDirectionCardinal": "SSW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1518,6 +1634,7 @@
     "windGustMph": 11,
     "windDirectionDeg": 224,
     "windDirectionCardinal": "SW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1531,6 +1648,7 @@
     "windGustMph": 12,
     "windDirectionDeg": 224,
     "windDirectionCardinal": "SW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1544,6 +1662,7 @@
     "windGustMph": 12,
     "windDirectionDeg": 221,
     "windDirectionCardinal": "SW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1557,6 +1676,7 @@
     "windGustMph": 11,
     "windDirectionDeg": 218,
     "windDirectionCardinal": "SW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1570,6 +1690,7 @@
     "windGustMph": 11,
     "windDirectionDeg": 258,
     "windDirectionCardinal": "WSW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1583,6 +1704,7 @@
     "windGustMph": 7,
     "windDirectionDeg": 272,
     "windDirectionCardinal": "W",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1596,6 +1718,7 @@
     "windGustMph": 4,
     "windDirectionDeg": 282,
     "windDirectionCardinal": "WNW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1609,6 +1732,7 @@
     "windGustMph": 3,
     "windDirectionDeg": 293,
     "windDirectionCardinal": "WNW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1622,6 +1746,7 @@
     "windGustMph": 1,
     "windDirectionDeg": 318,
     "windDirectionCardinal": "NW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1635,6 +1760,7 @@
     "windGustMph": 2,
     "windDirectionDeg": 287,
     "windDirectionCardinal": "WNW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1648,6 +1774,7 @@
     "windGustMph": 2,
     "windDirectionDeg": 9,
     "windDirectionCardinal": "N",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1661,6 +1788,7 @@
     "windGustMph": 3,
     "windDirectionDeg": 291,
     "windDirectionCardinal": "WNW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1674,6 +1802,7 @@
     "windGustMph": 3,
     "windDirectionDeg": 356,
     "windDirectionCardinal": "N",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1687,6 +1816,7 @@
     "windGustMph": 4,
     "windDirectionDeg": 121,
     "windDirectionCardinal": "ESE",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1700,6 +1830,7 @@
     "windGustMph": 2,
     "windDirectionDeg": 123,
     "windDirectionCardinal": "ESE",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1713,6 +1844,7 @@
     "windGustMph": 3,
     "windDirectionDeg": 84,
     "windDirectionCardinal": "E",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1726,6 +1858,7 @@
     "windGustMph": 5,
     "windDirectionDeg": 253,
     "windDirectionCardinal": "WSW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1739,6 +1872,7 @@
     "windGustMph": 6,
     "windDirectionDeg": 327,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1752,6 +1886,7 @@
     "windGustMph": 5,
     "windDirectionDeg": 41,
     "windDirectionCardinal": "NE",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1765,6 +1900,7 @@
     "windGustMph": 6,
     "windDirectionDeg": 328,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1778,6 +1914,7 @@
     "windGustMph": 6,
     "windDirectionDeg": 341,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1791,6 +1928,7 @@
     "windGustMph": 6,
     "windDirectionDeg": 313,
     "windDirectionCardinal": "NW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1804,6 +1942,7 @@
     "windGustMph": 5,
     "windDirectionDeg": 320,
     "windDirectionCardinal": "NW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1817,6 +1956,7 @@
     "windGustMph": 7,
     "windDirectionDeg": 354,
     "windDirectionCardinal": "N",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1830,6 +1970,7 @@
     "windGustMph": 8,
     "windDirectionDeg": 259,
     "windDirectionCardinal": "W",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1843,6 +1984,7 @@
     "windGustMph": 9,
     "windDirectionDeg": 227,
     "windDirectionCardinal": "SW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1856,6 +1998,7 @@
     "windGustMph": 12,
     "windDirectionDeg": 265,
     "windDirectionCardinal": "W",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1869,6 +2012,7 @@
     "windGustMph": 8,
     "windDirectionDeg": 206,
     "windDirectionCardinal": "SSW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1882,6 +2026,7 @@
     "windGustMph": 8,
     "windDirectionDeg": 250,
     "windDirectionCardinal": "WSW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1895,6 +2040,7 @@
     "windGustMph": 5,
     "windDirectionDeg": 312,
     "windDirectionCardinal": "NW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1908,6 +2054,7 @@
     "windGustMph": 5,
     "windDirectionDeg": 302,
     "windDirectionCardinal": "WNW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1921,6 +2068,7 @@
     "windGustMph": 6,
     "windDirectionDeg": 336,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1934,6 +2082,7 @@
     "windGustMph": 12,
     "windDirectionDeg": 331,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1947,6 +2096,7 @@
     "windGustMph": 8,
     "windDirectionDeg": 317,
     "windDirectionCardinal": "NW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1960,6 +2110,7 @@
     "windGustMph": 6,
     "windDirectionDeg": 326,
     "windDirectionCardinal": "NW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1973,6 +2124,7 @@
     "windGustMph": 7,
     "windDirectionDeg": 325,
     "windDirectionCardinal": "NW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1986,6 +2138,7 @@
     "windGustMph": 9,
     "windDirectionDeg": 313,
     "windDirectionCardinal": "NW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -1999,6 +2152,7 @@
     "windGustMph": 9,
     "windDirectionDeg": 325,
     "windDirectionCardinal": "NW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2012,6 +2166,7 @@
     "windGustMph": 9,
     "windDirectionDeg": 327,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2025,6 +2180,7 @@
     "windGustMph": 9,
     "windDirectionDeg": 321,
     "windDirectionCardinal": "NW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2038,6 +2194,7 @@
     "windGustMph": 13,
     "windDirectionDeg": 339,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2051,6 +2208,7 @@
     "windGustMph": 8,
     "windDirectionDeg": 340,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2064,6 +2222,7 @@
     "windGustMph": 11,
     "windDirectionDeg": 334,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2077,6 +2236,7 @@
     "windGustMph": 11,
     "windDirectionDeg": 336,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2090,6 +2250,7 @@
     "windGustMph": 12,
     "windDirectionDeg": 341,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2103,6 +2264,7 @@
     "windGustMph": 13,
     "windDirectionDeg": 342,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2116,6 +2278,7 @@
     "windGustMph": 12,
     "windDirectionDeg": 351,
     "windDirectionCardinal": "N",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2129,6 +2292,7 @@
     "windGustMph": 10,
     "windDirectionDeg": 346,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2142,6 +2306,7 @@
     "windGustMph": 12,
     "windDirectionDeg": 331,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2155,6 +2320,7 @@
     "windGustMph": 11,
     "windDirectionDeg": 331,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2168,6 +2334,7 @@
     "windGustMph": 14,
     "windDirectionDeg": 321,
     "windDirectionCardinal": "NW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2181,6 +2348,7 @@
     "windGustMph": 14,
     "windDirectionDeg": 343,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2194,6 +2362,7 @@
     "windGustMph": 12,
     "windDirectionDeg": 340,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2207,6 +2376,7 @@
     "windGustMph": 14,
     "windDirectionDeg": 340,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2220,6 +2390,7 @@
     "windGustMph": 13,
     "windDirectionDeg": 344,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2233,6 +2404,7 @@
     "windGustMph": 14,
     "windDirectionDeg": 342,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2246,6 +2418,7 @@
     "windGustMph": 13,
     "windDirectionDeg": 350,
     "windDirectionCardinal": "N",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2259,6 +2432,7 @@
     "windGustMph": 17,
     "windDirectionDeg": 348,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2272,6 +2446,7 @@
     "windGustMph": 17,
     "windDirectionDeg": 343,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2285,6 +2460,7 @@
     "windGustMph": 17,
     "windDirectionDeg": 337,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2298,6 +2474,7 @@
     "windGustMph": 16,
     "windDirectionDeg": 335,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2311,6 +2488,7 @@
     "windGustMph": 18,
     "windDirectionDeg": 332,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2324,6 +2502,7 @@
     "windGustMph": 20,
     "windDirectionDeg": 335,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2337,6 +2516,7 @@
     "windGustMph": 15,
     "windDirectionDeg": 338,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2350,6 +2530,7 @@
     "windGustMph": 11,
     "windDirectionDeg": 358,
     "windDirectionCardinal": "N",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2363,6 +2544,7 @@
     "windGustMph": 11,
     "windDirectionDeg": 355,
     "windDirectionCardinal": "N",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2376,6 +2558,7 @@
     "windGustMph": 10,
     "windDirectionDeg": 353,
     "windDirectionCardinal": "N",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2389,6 +2572,7 @@
     "windGustMph": 13,
     "windDirectionDeg": 342,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2402,6 +2586,7 @@
     "windGustMph": 10,
     "windDirectionDeg": 359,
     "windDirectionCardinal": "N",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2415,6 +2600,7 @@
     "windGustMph": 12,
     "windDirectionDeg": 351,
     "windDirectionCardinal": "N",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2428,6 +2614,7 @@
     "windGustMph": 10,
     "windDirectionDeg": 315,
     "windDirectionCardinal": "NW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2441,6 +2628,7 @@
     "windGustMph": 13,
     "windDirectionDeg": 324,
     "windDirectionCardinal": "NW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2454,6 +2642,7 @@
     "windGustMph": 9,
     "windDirectionDeg": 343,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2467,6 +2656,7 @@
     "windGustMph": 12,
     "windDirectionDeg": 327,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2480,6 +2670,7 @@
     "windGustMph": 11,
     "windDirectionDeg": 321,
     "windDirectionCardinal": "NW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2493,6 +2684,7 @@
     "windGustMph": 11,
     "windDirectionDeg": 312,
     "windDirectionCardinal": "NW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2506,6 +2698,7 @@
     "windGustMph": 8,
     "windDirectionDeg": 319,
     "windDirectionCardinal": "NW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2519,6 +2712,7 @@
     "windGustMph": 7,
     "windDirectionDeg": 318,
     "windDirectionCardinal": "NW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2532,6 +2726,7 @@
     "windGustMph": 6,
     "windDirectionDeg": 309,
     "windDirectionCardinal": "NW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2545,6 +2740,7 @@
     "windGustMph": 8,
     "windDirectionDeg": 313,
     "windDirectionCardinal": "NW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2558,6 +2754,7 @@
     "windGustMph": 9,
     "windDirectionDeg": 303,
     "windDirectionCardinal": "WNW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2571,6 +2768,7 @@
     "windGustMph": 7,
     "windDirectionDeg": 303,
     "windDirectionCardinal": "WNW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2584,6 +2782,7 @@
     "windGustMph": 8,
     "windDirectionDeg": 296,
     "windDirectionCardinal": "WNW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2597,6 +2796,7 @@
     "windGustMph": 8,
     "windDirectionDeg": 294,
     "windDirectionCardinal": "WNW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2610,6 +2810,7 @@
     "windGustMph": 7,
     "windDirectionDeg": 291,
     "windDirectionCardinal": "WNW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2623,6 +2824,7 @@
     "windGustMph": 7,
     "windDirectionDeg": 305,
     "windDirectionCardinal": "NW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2636,6 +2838,7 @@
     "windGustMph": 5,
     "windDirectionDeg": 350,
     "windDirectionCardinal": "N",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2649,6 +2852,7 @@
     "windGustMph": 2,
     "windDirectionDeg": 130,
     "windDirectionCardinal": "SE",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2662,6 +2866,7 @@
     "windGustMph": 5,
     "windDirectionDeg": 212,
     "windDirectionCardinal": "SSW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2675,6 +2880,7 @@
     "windGustMph": 6,
     "windDirectionDeg": 179,
     "windDirectionCardinal": "S",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2688,6 +2894,7 @@
     "windGustMph": 4,
     "windDirectionDeg": 147,
     "windDirectionCardinal": "SSE",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2701,6 +2908,7 @@
     "windGustMph": 9,
     "windDirectionDeg": 188,
     "windDirectionCardinal": "S",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2714,6 +2922,7 @@
     "windGustMph": 9,
     "windDirectionDeg": 224,
     "windDirectionCardinal": "SW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2727,6 +2936,7 @@
     "windGustMph": 11,
     "windDirectionDeg": 216,
     "windDirectionCardinal": "SW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2740,6 +2950,7 @@
     "windGustMph": 11,
     "windDirectionDeg": 167,
     "windDirectionCardinal": "SSE",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2753,6 +2964,7 @@
     "windGustMph": 12,
     "windDirectionDeg": 214,
     "windDirectionCardinal": "SW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2766,6 +2978,7 @@
     "windGustMph": 13,
     "windDirectionDeg": 217,
     "windDirectionCardinal": "SW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2779,6 +2992,7 @@
     "windGustMph": 15,
     "windDirectionDeg": 217,
     "windDirectionCardinal": "SW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2792,6 +3006,7 @@
     "windGustMph": 13,
     "windDirectionDeg": 222,
     "windDirectionCardinal": "SW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2805,6 +3020,7 @@
     "windGustMph": 13,
     "windDirectionDeg": 227,
     "windDirectionCardinal": "SW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2818,6 +3034,7 @@
     "windGustMph": 12,
     "windDirectionDeg": 228,
     "windDirectionCardinal": "SW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2831,6 +3048,7 @@
     "windGustMph": 10,
     "windDirectionDeg": 176,
     "windDirectionCardinal": "S",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2844,6 +3062,7 @@
     "windGustMph": 5,
     "windDirectionDeg": 203,
     "windDirectionCardinal": "SSW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2857,6 +3076,7 @@
     "windGustMph": 6,
     "windDirectionDeg": 213,
     "windDirectionCardinal": "SSW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2870,6 +3090,7 @@
     "windGustMph": 7,
     "windDirectionDeg": 226,
     "windDirectionCardinal": "SW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2883,6 +3104,7 @@
     "windGustMph": 4,
     "windDirectionDeg": 221,
     "windDirectionCardinal": "SW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2896,6 +3118,7 @@
     "windGustMph": 6,
     "windDirectionDeg": 66,
     "windDirectionCardinal": "ENE",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2909,6 +3132,7 @@
     "windGustMph": 8,
     "windDirectionDeg": 159,
     "windDirectionCardinal": "SSE",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2922,6 +3146,7 @@
     "windGustMph": 10,
     "windDirectionDeg": 202,
     "windDirectionCardinal": "SSW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2935,6 +3160,7 @@
     "windGustMph": 12,
     "windDirectionDeg": 194,
     "windDirectionCardinal": "SSW",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2948,6 +3174,7 @@
     "windGustMph": 13,
     "windDirectionDeg": 187,
     "windDirectionCardinal": "S",
+    "precipAccumIn": 45,
     "hourlyPrecipIn": 0
   },
   {
@@ -2961,7 +3188,8 @@
     "windGustMph": 13,
     "windDirectionDeg": 174,
     "windDirectionCardinal": "S",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 45.01,
+    "hourlyPrecipIn": 0.01
   },
   {
     "timestamp": "2026-04-10T12:50:00Z",
@@ -2974,7 +3202,8 @@
     "windGustMph": 13,
     "windDirectionDeg": 183,
     "windDirectionCardinal": "S",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 45.05,
+    "hourlyPrecipIn": 0.04
   },
   {
     "timestamp": "2026-04-10T13:50:00Z",
@@ -2987,7 +3216,8 @@
     "windGustMph": 12,
     "windDirectionDeg": 199,
     "windDirectionCardinal": "SSW",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 45.15,
+    "hourlyPrecipIn": 0.1
   },
   {
     "timestamp": "2026-04-10T14:50:00Z",
@@ -3000,7 +3230,8 @@
     "windGustMph": 16,
     "windDirectionDeg": 198,
     "windDirectionCardinal": "SSW",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 45.19,
+    "hourlyPrecipIn": 0.04
   },
   {
     "timestamp": "2026-04-10T15:50:00Z",
@@ -3013,7 +3244,8 @@
     "windGustMph": 11,
     "windDirectionDeg": 160,
     "windDirectionCardinal": "SSE",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 45.21,
+    "hourlyPrecipIn": 0.02
   },
   {
     "timestamp": "2026-04-10T16:50:00Z",
@@ -3026,7 +3258,8 @@
     "windGustMph": 14,
     "windDirectionDeg": 185,
     "windDirectionCardinal": "S",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 45.29,
+    "hourlyPrecipIn": 0.08
   },
   {
     "timestamp": "2026-04-10T17:50:00Z",
@@ -3039,7 +3272,8 @@
     "windGustMph": 13,
     "windDirectionDeg": 157,
     "windDirectionCardinal": "SSE",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 45.37,
+    "hourlyPrecipIn": 0.08
   },
   {
     "timestamp": "2026-04-10T18:50:00Z",
@@ -3052,7 +3286,8 @@
     "windGustMph": 17,
     "windDirectionDeg": 204,
     "windDirectionCardinal": "SSW",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 45.4,
+    "hourlyPrecipIn": 0.03
   },
   {
     "timestamp": "2026-04-10T19:50:00Z",
@@ -3065,7 +3300,8 @@
     "windGustMph": 18,
     "windDirectionDeg": 203,
     "windDirectionCardinal": "SSW",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 45.43,
+    "hourlyPrecipIn": 0.03
   },
   {
     "timestamp": "2026-04-10T20:50:00Z",
@@ -3078,6 +3314,7 @@
     "windGustMph": 17,
     "windDirectionDeg": 214,
     "windDirectionCardinal": "SW",
+    "precipAccumIn": 45.43,
     "hourlyPrecipIn": 0
   },
   {
@@ -3091,6 +3328,7 @@
     "windGustMph": 20,
     "windDirectionDeg": 209,
     "windDirectionCardinal": "SSW",
+    "precipAccumIn": 45.43,
     "hourlyPrecipIn": 0
   },
   {
@@ -3104,6 +3342,7 @@
     "windGustMph": 19,
     "windDirectionDeg": 208,
     "windDirectionCardinal": "SSW",
+    "precipAccumIn": 45.43,
     "hourlyPrecipIn": 0
   },
   {
@@ -3117,7 +3356,8 @@
     "windGustMph": 22,
     "windDirectionDeg": 216,
     "windDirectionCardinal": "SW",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 45.47,
+    "hourlyPrecipIn": 0.04
   },
   {
     "timestamp": "2026-04-11T00:50:00Z",
@@ -3130,6 +3370,7 @@
     "windGustMph": 22,
     "windDirectionDeg": 207,
     "windDirectionCardinal": "SSW",
+    "precipAccumIn": 45.47,
     "hourlyPrecipIn": 0
   },
   {
@@ -3143,7 +3384,8 @@
     "windGustMph": 23,
     "windDirectionDeg": 217,
     "windDirectionCardinal": "SW",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 45.63,
+    "hourlyPrecipIn": 0.16
   },
   {
     "timestamp": "2026-04-11T02:50:00Z",
@@ -3156,7 +3398,8 @@
     "windGustMph": 23,
     "windDirectionDeg": 233,
     "windDirectionCardinal": "SW",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 45.72,
+    "hourlyPrecipIn": 0.09
   },
   {
     "timestamp": "2026-04-11T03:50:00Z",
@@ -3169,7 +3412,8 @@
     "windGustMph": 19,
     "windDirectionDeg": 243,
     "windDirectionCardinal": "WSW",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 45.73,
+    "hourlyPrecipIn": 0.01
   },
   {
     "timestamp": "2026-04-11T04:50:00Z",
@@ -3182,7 +3426,8 @@
     "windGustMph": 17,
     "windDirectionDeg": 235,
     "windDirectionCardinal": "SW",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 45.83,
+    "hourlyPrecipIn": 0.1
   },
   {
     "timestamp": "2026-04-11T05:50:00Z",
@@ -3195,7 +3440,8 @@
     "windGustMph": 15,
     "windDirectionDeg": 249,
     "windDirectionCardinal": "WSW",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 45.97,
+    "hourlyPrecipIn": 0.14
   },
   {
     "timestamp": "2026-04-11T06:50:00Z",
@@ -3208,7 +3454,8 @@
     "windGustMph": 13,
     "windDirectionDeg": 213,
     "windDirectionCardinal": "SSW",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 46.13,
+    "hourlyPrecipIn": 0.16
   },
   {
     "timestamp": "2026-04-11T07:50:00Z",
@@ -3221,7 +3468,8 @@
     "windGustMph": 10,
     "windDirectionDeg": 290,
     "windDirectionCardinal": "WNW",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 46.54,
+    "hourlyPrecipIn": 0.41
   },
   {
     "timestamp": "2026-04-11T08:50:00Z",
@@ -3234,7 +3482,8 @@
     "windGustMph": 11,
     "windDirectionDeg": 252,
     "windDirectionCardinal": "WSW",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 46.61,
+    "hourlyPrecipIn": 0.07
   },
   {
     "timestamp": "2026-04-11T09:50:00Z",
@@ -3247,7 +3496,8 @@
     "windGustMph": 8,
     "windDirectionDeg": 246,
     "windDirectionCardinal": "WSW",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 46.65,
+    "hourlyPrecipIn": 0.04
   },
   {
     "timestamp": "2026-04-11T10:50:00Z",
@@ -3260,7 +3510,8 @@
     "windGustMph": 12,
     "windDirectionDeg": 235,
     "windDirectionCardinal": "SW",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 46.71,
+    "hourlyPrecipIn": 0.06
   },
   {
     "timestamp": "2026-04-11T11:50:00Z",
@@ -3273,7 +3524,8 @@
     "windGustMph": 11,
     "windDirectionDeg": 244,
     "windDirectionCardinal": "WSW",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 46.73,
+    "hourlyPrecipIn": 0.02
   },
   {
     "timestamp": "2026-04-11T12:50:00Z",
@@ -3286,6 +3538,7 @@
     "windGustMph": 14,
     "windDirectionDeg": 211,
     "windDirectionCardinal": "SSW",
+    "precipAccumIn": 46.73,
     "hourlyPrecipIn": 0
   },
   {
@@ -3299,6 +3552,7 @@
     "windGustMph": 12,
     "windDirectionDeg": 190,
     "windDirectionCardinal": "S",
+    "precipAccumIn": 46.73,
     "hourlyPrecipIn": 0
   },
   {
@@ -3312,6 +3566,7 @@
     "windGustMph": 13,
     "windDirectionDeg": 204,
     "windDirectionCardinal": "SSW",
+    "precipAccumIn": 46.73,
     "hourlyPrecipIn": 0
   },
   {
@@ -3325,7 +3580,8 @@
     "windGustMph": 21,
     "windDirectionDeg": 202,
     "windDirectionCardinal": "SSW",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 46.77,
+    "hourlyPrecipIn": 0.04
   },
   {
     "timestamp": "2026-04-11T16:50:00Z",
@@ -3338,7 +3594,8 @@
     "windGustMph": 19,
     "windDirectionDeg": 210,
     "windDirectionCardinal": "SSW",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 46.91,
+    "hourlyPrecipIn": 0.14
   },
   {
     "timestamp": "2026-04-11T17:50:00Z",
@@ -3351,7 +3608,8 @@
     "windGustMph": 23,
     "windDirectionDeg": 214,
     "windDirectionCardinal": "SW",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 46.97,
+    "hourlyPrecipIn": 0.06
   },
   {
     "timestamp": "2026-04-11T18:50:00Z",
@@ -3364,7 +3622,8 @@
     "windGustMph": 29,
     "windDirectionDeg": 225,
     "windDirectionCardinal": "SW",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 46.98,
+    "hourlyPrecipIn": 0.01
   },
   {
     "timestamp": "2026-04-11T19:50:00Z",
@@ -3377,7 +3636,8 @@
     "windGustMph": 28,
     "windDirectionDeg": 230,
     "windDirectionCardinal": "SW",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 47.17,
+    "hourlyPrecipIn": 0.19
   },
   {
     "timestamp": "2026-04-11T20:50:00Z",
@@ -3390,7 +3650,8 @@
     "windGustMph": 24,
     "windDirectionDeg": 221,
     "windDirectionCardinal": "SW",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 47.26,
+    "hourlyPrecipIn": 0.09
   },
   {
     "timestamp": "2026-04-11T21:50:00Z",
@@ -3403,7 +3664,8 @@
     "windGustMph": 27,
     "windDirectionDeg": 194,
     "windDirectionCardinal": "SSW",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 47.32,
+    "hourlyPrecipIn": 0.06
   },
   {
     "timestamp": "2026-04-11T22:50:00Z",
@@ -3416,6 +3678,7 @@
     "windGustMph": 29,
     "windDirectionDeg": 201,
     "windDirectionCardinal": "SSW",
+    "precipAccumIn": 47.32,
     "hourlyPrecipIn": 0
   },
   {
@@ -3429,7 +3692,8 @@
     "windGustMph": 36,
     "windDirectionDeg": 205,
     "windDirectionCardinal": "SSW",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 47.36,
+    "hourlyPrecipIn": 0.04
   },
   {
     "timestamp": "2026-04-12T00:50:00Z",
@@ -3442,7 +3706,8 @@
     "windGustMph": 35,
     "windDirectionDeg": 222,
     "windDirectionCardinal": "SW",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 47.63,
+    "hourlyPrecipIn": 0.27
   },
   {
     "timestamp": "2026-04-12T01:50:00Z",
@@ -3455,7 +3720,8 @@
     "windGustMph": 31,
     "windDirectionDeg": 258,
     "windDirectionCardinal": "WSW",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 47.91,
+    "hourlyPrecipIn": 0.28
   },
   {
     "timestamp": "2026-04-12T02:50:00Z",
@@ -3468,7 +3734,8 @@
     "windGustMph": 16,
     "windDirectionDeg": 246,
     "windDirectionCardinal": "WSW",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 47.96,
+    "hourlyPrecipIn": 0.05
   },
   {
     "timestamp": "2026-04-12T03:50:00Z",
@@ -3481,6 +3748,7 @@
     "windGustMph": 16,
     "windDirectionDeg": 246,
     "windDirectionCardinal": "WSW",
+    "precipAccumIn": 47.96,
     "hourlyPrecipIn": 0
   },
   {
@@ -3494,6 +3762,7 @@
     "windGustMph": 17,
     "windDirectionDeg": 248,
     "windDirectionCardinal": "WSW",
+    "precipAccumIn": 47.96,
     "hourlyPrecipIn": 0
   },
   {
@@ -3507,7 +3776,8 @@
     "windGustMph": 18,
     "windDirectionDeg": 243,
     "windDirectionCardinal": "WSW",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 47.97,
+    "hourlyPrecipIn": 0.01
   },
   {
     "timestamp": "2026-04-12T06:50:00Z",
@@ -3520,7 +3790,8 @@
     "windGustMph": 22,
     "windDirectionDeg": 270,
     "windDirectionCardinal": "W",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 48.1,
+    "hourlyPrecipIn": 0.13
   },
   {
     "timestamp": "2026-04-12T07:50:00Z",
@@ -3533,7 +3804,8 @@
     "windGustMph": 19,
     "windDirectionDeg": 256,
     "windDirectionCardinal": "WSW",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 48.11,
+    "hourlyPrecipIn": 0.01
   },
   {
     "timestamp": "2026-04-12T08:50:00Z",
@@ -3546,6 +3818,7 @@
     "windGustMph": 22,
     "windDirectionDeg": 249,
     "windDirectionCardinal": "WSW",
+    "precipAccumIn": 48.11,
     "hourlyPrecipIn": 0
   },
   {
@@ -3559,7 +3832,8 @@
     "windGustMph": 22,
     "windDirectionDeg": 255,
     "windDirectionCardinal": "WSW",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 48.12,
+    "hourlyPrecipIn": 0.01
   },
   {
     "timestamp": "2026-04-12T10:50:00Z",
@@ -3572,7 +3846,8 @@
     "windGustMph": 24,
     "windDirectionDeg": 267,
     "windDirectionCardinal": "W",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 48.2,
+    "hourlyPrecipIn": 0.08
   },
   {
     "timestamp": "2026-04-12T11:50:00Z",
@@ -3585,6 +3860,7 @@
     "windGustMph": 15,
     "windDirectionDeg": 261,
     "windDirectionCardinal": "W",
+    "precipAccumIn": 48.2,
     "hourlyPrecipIn": 0
   },
   {
@@ -3598,7 +3874,8 @@
     "windGustMph": 13,
     "windDirectionDeg": 249,
     "windDirectionCardinal": "WSW",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 48.33,
+    "hourlyPrecipIn": 0.13
   },
   {
     "timestamp": "2026-04-12T13:50:00Z",
@@ -3611,7 +3888,8 @@
     "windGustMph": 13,
     "windDirectionDeg": 251,
     "windDirectionCardinal": "WSW",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 48.34,
+    "hourlyPrecipIn": 0.01
   },
   {
     "timestamp": "2026-04-12T14:50:00Z",
@@ -3624,7 +3902,8 @@
     "windGustMph": 16,
     "windDirectionDeg": 232,
     "windDirectionCardinal": "SW",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 48.4,
+    "hourlyPrecipIn": 0.06
   },
   {
     "timestamp": "2026-04-12T15:50:00Z",
@@ -3637,7 +3916,8 @@
     "windGustMph": 19,
     "windDirectionDeg": 246,
     "windDirectionCardinal": "WSW",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 48.43,
+    "hourlyPrecipIn": 0.03
   },
   {
     "timestamp": "2026-04-12T16:50:00Z",
@@ -3650,6 +3930,7 @@
     "windGustMph": 21,
     "windDirectionDeg": 253,
     "windDirectionCardinal": "WSW",
+    "precipAccumIn": 48.43,
     "hourlyPrecipIn": 0
   },
   {
@@ -3663,7 +3944,8 @@
     "windGustMph": 16,
     "windDirectionDeg": 248,
     "windDirectionCardinal": "WSW",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 48.45,
+    "hourlyPrecipIn": 0.02
   },
   {
     "timestamp": "2026-04-12T18:50:00Z",
@@ -3676,6 +3958,7 @@
     "windGustMph": 19,
     "windDirectionDeg": 240,
     "windDirectionCardinal": "WSW",
+    "precipAccumIn": 48.45,
     "hourlyPrecipIn": 0
   },
   {
@@ -3689,7 +3972,8 @@
     "windGustMph": 17,
     "windDirectionDeg": 241,
     "windDirectionCardinal": "WSW",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 48.47,
+    "hourlyPrecipIn": 0.02
   },
   {
     "timestamp": "2026-04-12T20:50:00Z",
@@ -3702,7 +3986,8 @@
     "windGustMph": 19,
     "windDirectionDeg": 258,
     "windDirectionCardinal": "WSW",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 48.53,
+    "hourlyPrecipIn": 0.06
   },
   {
     "timestamp": "2026-04-12T21:50:00Z",
@@ -3715,6 +4000,7 @@
     "windGustMph": 25,
     "windDirectionDeg": 247,
     "windDirectionCardinal": "WSW",
+    "precipAccumIn": 48.53,
     "hourlyPrecipIn": 0
   },
   {
@@ -3728,7 +4014,8 @@
     "windGustMph": 15,
     "windDirectionDeg": 256,
     "windDirectionCardinal": "WSW",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 48.55,
+    "hourlyPrecipIn": 0.02
   },
   {
     "timestamp": "2026-04-12T23:50:00Z",
@@ -3741,6 +4028,7 @@
     "windGustMph": 12,
     "windDirectionDeg": 252,
     "windDirectionCardinal": "WSW",
+    "precipAccumIn": 48.55,
     "hourlyPrecipIn": 0
   },
   {
@@ -3754,6 +4042,7 @@
     "windGustMph": 15,
     "windDirectionDeg": 258,
     "windDirectionCardinal": "WSW",
+    "precipAccumIn": 48.55,
     "hourlyPrecipIn": 0
   },
   {
@@ -3767,7 +4056,8 @@
     "windGustMph": 16,
     "windDirectionDeg": 245,
     "windDirectionCardinal": "WSW",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 48.61,
+    "hourlyPrecipIn": 0.06
   },
   {
     "timestamp": "2026-04-13T02:50:00Z",
@@ -3780,7 +4070,8 @@
     "windGustMph": 19,
     "windDirectionDeg": 262,
     "windDirectionCardinal": "W",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 48.69,
+    "hourlyPrecipIn": 0.08
   },
   {
     "timestamp": "2026-04-13T03:50:00Z",
@@ -3793,7 +4084,8 @@
     "windGustMph": 12,
     "windDirectionDeg": 280,
     "windDirectionCardinal": "W",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 48.72,
+    "hourlyPrecipIn": 0.03
   },
   {
     "timestamp": "2026-04-13T04:50:00Z",
@@ -3806,6 +4098,7 @@
     "windGustMph": 12,
     "windDirectionDeg": 266,
     "windDirectionCardinal": "W",
+    "precipAccumIn": 48.72,
     "hourlyPrecipIn": 0
   },
   {
@@ -3819,6 +4112,7 @@
     "windGustMph": 6,
     "windDirectionDeg": 266,
     "windDirectionCardinal": "W",
+    "precipAccumIn": 48.72,
     "hourlyPrecipIn": 0
   },
   {
@@ -3832,6 +4126,7 @@
     "windGustMph": 7,
     "windDirectionDeg": 261,
     "windDirectionCardinal": "W",
+    "precipAccumIn": 48.72,
     "hourlyPrecipIn": 0
   },
   {
@@ -3845,6 +4140,7 @@
     "windGustMph": 6,
     "windDirectionDeg": 252,
     "windDirectionCardinal": "WSW",
+    "precipAccumIn": 48.72,
     "hourlyPrecipIn": 0
   },
   {
@@ -3858,7 +4154,8 @@
     "windGustMph": 7,
     "windDirectionDeg": 270,
     "windDirectionCardinal": "W",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 48.73,
+    "hourlyPrecipIn": 0.01
   },
   {
     "timestamp": "2026-04-13T09:50:00Z",
@@ -3871,7 +4168,8 @@
     "windGustMph": 7,
     "windDirectionDeg": 247,
     "windDirectionCardinal": "WSW",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 48.75,
+    "hourlyPrecipIn": 0.02
   },
   {
     "timestamp": "2026-04-13T10:50:00Z",
@@ -3884,7 +4182,8 @@
     "windGustMph": 7,
     "windDirectionDeg": 247,
     "windDirectionCardinal": "WSW",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 48.76,
+    "hourlyPrecipIn": 0.01
   },
   {
     "timestamp": "2026-04-13T11:50:00Z",
@@ -3897,6 +4196,7 @@
     "windGustMph": 5,
     "windDirectionDeg": 292,
     "windDirectionCardinal": "WNW",
+    "precipAccumIn": 48.76,
     "hourlyPrecipIn": 0
   },
   {
@@ -3910,6 +4210,7 @@
     "windGustMph": 5,
     "windDirectionDeg": 338,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 48.76,
     "hourlyPrecipIn": 0
   },
   {
@@ -3923,6 +4224,7 @@
     "windGustMph": 9,
     "windDirectionDeg": 343,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 48.76,
     "hourlyPrecipIn": 0
   },
   {
@@ -3936,6 +4238,7 @@
     "windGustMph": 9,
     "windDirectionDeg": 359,
     "windDirectionCardinal": "N",
+    "precipAccumIn": 48.76,
     "hourlyPrecipIn": 0
   },
   {
@@ -3949,6 +4252,7 @@
     "windGustMph": 9,
     "windDirectionDeg": 357,
     "windDirectionCardinal": "N",
+    "precipAccumIn": 48.76,
     "hourlyPrecipIn": 0
   },
   {
@@ -3962,6 +4266,7 @@
     "windGustMph": 8,
     "windDirectionDeg": 338,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 48.76,
     "hourlyPrecipIn": 0
   },
   {
@@ -3975,6 +4280,7 @@
     "windGustMph": 8,
     "windDirectionDeg": 327,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 48.76,
     "hourlyPrecipIn": 0
   },
   {
@@ -3988,7 +4294,8 @@
     "windGustMph": 8,
     "windDirectionDeg": 325,
     "windDirectionCardinal": "NW",
-    "hourlyPrecipIn": 0
+    "precipAccumIn": 48.77,
+    "hourlyPrecipIn": 0.01
   },
   {
     "timestamp": "2026-04-13T19:50:00Z",
@@ -4001,6 +4308,7 @@
     "windGustMph": 12,
     "windDirectionDeg": 314,
     "windDirectionCardinal": "NW",
+    "precipAccumIn": 48.77,
     "hourlyPrecipIn": 0
   },
   {
@@ -4014,6 +4322,7 @@
     "windGustMph": 15,
     "windDirectionDeg": 315,
     "windDirectionCardinal": "NW",
+    "precipAccumIn": 48.77,
     "hourlyPrecipIn": 0
   },
   {
@@ -4027,6 +4336,7 @@
     "windGustMph": 12,
     "windDirectionDeg": 322,
     "windDirectionCardinal": "NW",
+    "precipAccumIn": 48.77,
     "hourlyPrecipIn": 0
   },
   {
@@ -4040,6 +4350,7 @@
     "windGustMph": 13,
     "windDirectionDeg": 333,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 48.77,
     "hourlyPrecipIn": 0
   },
   {
@@ -4053,6 +4364,7 @@
     "windGustMph": 9,
     "windDirectionDeg": 326,
     "windDirectionCardinal": "NW",
+    "precipAccumIn": 48.77,
     "hourlyPrecipIn": 0
   },
   {
@@ -4066,6 +4378,7 @@
     "windGustMph": 12,
     "windDirectionDeg": 326,
     "windDirectionCardinal": "NW",
+    "precipAccumIn": 48.77,
     "hourlyPrecipIn": 0
   },
   {
@@ -4079,6 +4392,7 @@
     "windGustMph": 12,
     "windDirectionDeg": 331,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 48.77,
     "hourlyPrecipIn": 0
   },
   {
@@ -4092,6 +4406,7 @@
     "windGustMph": 11,
     "windDirectionDeg": 333,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 48.77,
     "hourlyPrecipIn": 0
   },
   {
@@ -4105,6 +4420,7 @@
     "windGustMph": 11,
     "windDirectionDeg": 330,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 48.77,
     "hourlyPrecipIn": 0
   },
   {
@@ -4118,6 +4434,7 @@
     "windGustMph": 9,
     "windDirectionDeg": 347,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 48.77,
     "hourlyPrecipIn": 0
   },
   {
@@ -4131,6 +4448,7 @@
     "windGustMph": 7,
     "windDirectionDeg": 323,
     "windDirectionCardinal": "NW",
+    "precipAccumIn": 48.77,
     "hourlyPrecipIn": 0
   },
   {
@@ -4144,6 +4462,7 @@
     "windGustMph": 9,
     "windDirectionDeg": 315,
     "windDirectionCardinal": "NW",
+    "precipAccumIn": 48.77,
     "hourlyPrecipIn": 0
   },
   {
@@ -4157,6 +4476,7 @@
     "windGustMph": 9,
     "windDirectionDeg": 315,
     "windDirectionCardinal": "NW",
+    "precipAccumIn": 48.77,
     "hourlyPrecipIn": 0
   },
   {
@@ -4170,6 +4490,7 @@
     "windGustMph": 10,
     "windDirectionDeg": 326,
     "windDirectionCardinal": "NW",
+    "precipAccumIn": 48.77,
     "hourlyPrecipIn": 0
   },
   {
@@ -4183,6 +4504,7 @@
     "windGustMph": 13,
     "windDirectionDeg": 326,
     "windDirectionCardinal": "NW",
+    "precipAccumIn": 48.77,
     "hourlyPrecipIn": 0
   },
   {
@@ -4196,6 +4518,7 @@
     "windGustMph": 10,
     "windDirectionDeg": 325,
     "windDirectionCardinal": "NW",
+    "precipAccumIn": 48.77,
     "hourlyPrecipIn": 0
   },
   {
@@ -4209,6 +4532,7 @@
     "windGustMph": 8,
     "windDirectionDeg": 315,
     "windDirectionCardinal": "NW",
+    "precipAccumIn": 48.77,
     "hourlyPrecipIn": 0
   },
   {
@@ -4222,6 +4546,7 @@
     "windGustMph": 9,
     "windDirectionDeg": 318,
     "windDirectionCardinal": "NW",
+    "precipAccumIn": 48.77,
     "hourlyPrecipIn": 0
   },
   {
@@ -4235,6 +4560,7 @@
     "windGustMph": 10,
     "windDirectionDeg": 334,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 48.77,
     "hourlyPrecipIn": 0
   },
   {
@@ -4248,6 +4574,7 @@
     "windGustMph": 8,
     "windDirectionDeg": 315,
     "windDirectionCardinal": "NW",
+    "precipAccumIn": 48.77,
     "hourlyPrecipIn": 0
   },
   {
@@ -4261,6 +4588,7 @@
     "windGustMph": 10,
     "windDirectionDeg": 323,
     "windDirectionCardinal": "NW",
+    "precipAccumIn": 48.77,
     "hourlyPrecipIn": 0
   },
   {
@@ -4274,6 +4602,7 @@
     "windGustMph": 10,
     "windDirectionDeg": 341,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 48.77,
     "hourlyPrecipIn": 0
   },
   {
@@ -4287,6 +4616,7 @@
     "windGustMph": 8,
     "windDirectionDeg": 344,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 48.77,
     "hourlyPrecipIn": 0
   },
   {
@@ -4300,6 +4630,7 @@
     "windGustMph": 9,
     "windDirectionDeg": 37,
     "windDirectionCardinal": "NE",
+    "precipAccumIn": 48.77,
     "hourlyPrecipIn": 0
   },
   {
@@ -4313,6 +4644,7 @@
     "windGustMph": 6,
     "windDirectionDeg": 358,
     "windDirectionCardinal": "N",
+    "precipAccumIn": 48.77,
     "hourlyPrecipIn": 0
   },
   {
@@ -4326,6 +4658,7 @@
     "windGustMph": 8,
     "windDirectionDeg": 345,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 48.77,
     "hourlyPrecipIn": 0
   },
   {
@@ -4339,6 +4672,7 @@
     "windGustMph": 10,
     "windDirectionDeg": 322,
     "windDirectionCardinal": "NW",
+    "precipAccumIn": 48.77,
     "hourlyPrecipIn": 0
   },
   {
@@ -4352,6 +4686,7 @@
     "windGustMph": 9,
     "windDirectionDeg": 325,
     "windDirectionCardinal": "NW",
+    "precipAccumIn": 48.77,
     "hourlyPrecipIn": 0
   },
   {
@@ -4365,6 +4700,7 @@
     "windGustMph": 9,
     "windDirectionDeg": 338,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 48.77,
     "hourlyPrecipIn": 0
   },
   {
@@ -4378,6 +4714,7 @@
     "windGustMph": 9,
     "windDirectionDeg": 334,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 48.77,
     "hourlyPrecipIn": 0
   },
   {
@@ -4391,6 +4728,7 @@
     "windGustMph": 9,
     "windDirectionDeg": 349,
     "windDirectionCardinal": "N",
+    "precipAccumIn": 48.77,
     "hourlyPrecipIn": 0
   },
   {
@@ -4404,6 +4742,7 @@
     "windGustMph": 8,
     "windDirectionDeg": 16,
     "windDirectionCardinal": "NNE",
+    "precipAccumIn": 48.77,
     "hourlyPrecipIn": 0
   },
   {
@@ -4417,6 +4756,7 @@
     "windGustMph": 8,
     "windDirectionDeg": 1,
     "windDirectionCardinal": "N",
+    "precipAccumIn": 48.77,
     "hourlyPrecipIn": 0
   },
   {
@@ -4430,6 +4770,7 @@
     "windGustMph": 8,
     "windDirectionDeg": 359,
     "windDirectionCardinal": "N",
+    "precipAccumIn": 48.77,
     "hourlyPrecipIn": 0
   },
   {
@@ -4443,6 +4784,7 @@
     "windGustMph": 9,
     "windDirectionDeg": 348,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 48.77,
     "hourlyPrecipIn": 0
   },
   {
@@ -4456,6 +4798,7 @@
     "windGustMph": 8,
     "windDirectionDeg": 13,
     "windDirectionCardinal": "NNE",
+    "precipAccumIn": 48.77,
     "hourlyPrecipIn": 0
   },
   {
@@ -4469,6 +4812,7 @@
     "windGustMph": 5,
     "windDirectionDeg": 335,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 48.77,
     "hourlyPrecipIn": 0
   },
   {
@@ -4482,6 +4826,7 @@
     "windGustMph": 5,
     "windDirectionDeg": 317,
     "windDirectionCardinal": "NW",
+    "precipAccumIn": 48.77,
     "hourlyPrecipIn": 0
   },
   {
@@ -4495,6 +4840,7 @@
     "windGustMph": 9,
     "windDirectionDeg": 314,
     "windDirectionCardinal": "NW",
+    "precipAccumIn": 48.77,
     "hourlyPrecipIn": 0
   },
   {
@@ -4508,6 +4854,7 @@
     "windGustMph": 11,
     "windDirectionDeg": 323,
     "windDirectionCardinal": "NW",
+    "precipAccumIn": 48.77,
     "hourlyPrecipIn": 0
   },
   {
@@ -4521,6 +4868,7 @@
     "windGustMph": 10,
     "windDirectionDeg": 340,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 48.77,
     "hourlyPrecipIn": 0
   },
   {
@@ -4534,6 +4882,7 @@
     "windGustMph": 9,
     "windDirectionDeg": 349,
     "windDirectionCardinal": "N",
+    "precipAccumIn": 48.77,
     "hourlyPrecipIn": 0
   },
   {
@@ -4547,6 +4896,7 @@
     "windGustMph": 7,
     "windDirectionDeg": 2,
     "windDirectionCardinal": "N",
+    "precipAccumIn": 48.77,
     "hourlyPrecipIn": 0
   },
   {
@@ -4560,6 +4910,7 @@
     "windGustMph": 7,
     "windDirectionDeg": 341,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 48.77,
     "hourlyPrecipIn": 0
   },
   {
@@ -4573,6 +4924,7 @@
     "windGustMph": 9,
     "windDirectionDeg": 339,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 48.77,
     "hourlyPrecipIn": 0
   },
   {
@@ -4586,6 +4938,7 @@
     "windGustMph": 8,
     "windDirectionDeg": 16,
     "windDirectionCardinal": "NNE",
+    "precipAccumIn": 48.77,
     "hourlyPrecipIn": 0
   },
   {
@@ -4599,6 +4952,7 @@
     "windGustMph": 8,
     "windDirectionDeg": 354,
     "windDirectionCardinal": "N",
+    "precipAccumIn": 48.77,
     "hourlyPrecipIn": 0
   },
   {
@@ -4612,6 +4966,7 @@
     "windGustMph": 9,
     "windDirectionDeg": 41,
     "windDirectionCardinal": "NE",
+    "precipAccumIn": 48.77,
     "hourlyPrecipIn": 0
   },
   {
@@ -4625,6 +4980,7 @@
     "windGustMph": 9,
     "windDirectionDeg": 4,
     "windDirectionCardinal": "N",
+    "precipAccumIn": 48.77,
     "hourlyPrecipIn": 0
   },
   {
@@ -4638,6 +4994,7 @@
     "windGustMph": 9,
     "windDirectionDeg": 1,
     "windDirectionCardinal": "N",
+    "precipAccumIn": 48.77,
     "hourlyPrecipIn": 0
   },
   {
@@ -4651,6 +5008,21 @@
     "windGustMph": 11,
     "windDirectionDeg": 341,
     "windDirectionCardinal": "NNW",
+    "precipAccumIn": 48.77,
+    "hourlyPrecipIn": 0
+  },
+  {
+    "timestamp": "2026-04-15T22:50:00Z",
+    "stationId": "BNDC1",
+    "source": "synoptic",
+    "temperatureF": 57,
+    "humidityPct": 69,
+    "fuelMoisturePct": 10.6,
+    "windSpeedMph": 5,
+    "windGustMph": 11,
+    "windDirectionDeg": 346,
+    "windDirectionCardinal": "NNW",
+    "precipAccumIn": 48.77,
     "hourlyPrecipIn": 0
   },
   {
