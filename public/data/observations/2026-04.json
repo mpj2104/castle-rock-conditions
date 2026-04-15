@@ -4652,5 +4652,18 @@
     "windDirectionDeg": 341,
     "windDirectionCardinal": "NNW",
     "hourlyPrecipIn": 0
+  },
+  {
+    "timestamp": "2026-04-15T22:50:00Z",
+    "stationId": "BNDC1",
+    "source": "synoptic",
+    "temperatureF": 57,
+    "humidityPct": 69,
+    "fuelMoisturePct": 10.6,
+    "windSpeedMph": 5,
+    "windGustMph": 11,
+    "windDirectionDeg": 346,
+    "windDirectionCardinal": "NNW",
+    "hourlyPrecipIn": 0
   }
 ]
