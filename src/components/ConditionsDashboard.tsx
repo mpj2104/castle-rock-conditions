@@ -37,6 +37,25 @@ function getClimbingStatus(observations: Observation[], latestObservation: Obser
   return 'neutral'
 }
 
+function getPast72hRain(observations: Observation[], latestObservation: Observation | null): number | null {
+  if (!latestObservation) {
+    return null
+  }
+
+  const latestTime = new Date(latestObservation.timestamp).getTime()
+  const cutoff = latestTime - RAIN_WINDOW_MS
+  const sum = observations.reduce((total, observation) => {
+    const observationTime = new Date(observation.timestamp).getTime()
+    if (observationTime < cutoff || observation.hourlyPrecipIn === null || observation.hourlyPrecipIn <= 0) {
+      return total
+    }
+
+    return total + observation.hourlyPrecipIn
+  }, 0)
+
+  return Number(sum.toFixed(2))
+}
+
 type LoadState =
   | { status: 'loading' }
   | { status: 'error'; message: string }
@@ -63,11 +82,15 @@ export function ConditionsDashboard() {
     async function hydrate() {
       try {
         const manifest = await loadManifest()
-        const start = getPresetStart(preset, manifest.latestObservationAt)
-        const files = getRequiredPartitions(manifest, start)
+        const presetStart = getPresetStart(preset, manifest.latestObservationAt)
+        const rainStart = new Date(new Date(manifest.latestObservationAt).getTime() - RAIN_WINDOW_MS)
+        const loadStart = presetStart === null
+          ? null
+          : new Date(Math.min(presetStart.getTime(), rainStart.getTime()))
+        const files = getRequiredPartitions(manifest, loadStart)
         const observations = filterObservations(
           await loadObservations(files, manifest.generatedAt),
-          start,
+          loadStart,
         )
 
         if (!cancelled) {
@@ -90,9 +113,16 @@ export function ConditionsDashboard() {
     }
   }, [preset, refreshTick])
 
-  const deferredObservations = useDeferredValue(
-    state.status === 'ready' ? state.observations : [],
-  )
+  const chartObservations = useMemo(() => {
+    if (state.status !== 'ready') {
+      return []
+    }
+
+    const chartStart = getPresetStart(preset, state.manifest.latestObservationAt)
+    return filterObservations(state.observations, chartStart)
+  }, [state, preset])
+
+  const deferredObservations = useDeferredValue(chartObservations)
 
   const latestObservation = useMemo(() => {
     return state.status === 'ready' ? getLatestObservation(state.observations) : null
@@ -101,6 +131,14 @@ export function ConditionsDashboard() {
   const climbingStatus = useMemo<ClimbingStatus>(() => {
     if (state.status !== 'ready') return 'neutral'
     return getClimbingStatus(state.observations, latestObservation)
+  }, [state, latestObservation])
+
+  const past72hRainIn = useMemo(() => {
+    if (state.status !== 'ready') {
+      return null
+    }
+
+    return getPast72hRain(state.observations, latestObservation)
   }, [state, latestObservation])
 
   if (state.status === 'loading') {
@@ -160,22 +198,25 @@ export function ConditionsDashboard() {
         <SummaryCard
           label="Temperature"
           value={formatValue(latestObservation?.temperatureF ?? null, ' F')}
+          valueClassName="summary-value--temperature"
         />
         <SummaryCard
           label="Humidity"
           value={formatValue(latestObservation?.humidityPct ?? null, '%')}
+          valueClassName="summary-value--humidity"
         />
         <SummaryCard
           label="Fuel Moisture"
           value={formatValue(latestObservation?.fuelMoisturePct ?? null, '%', 1)}
+          valueClassName="summary-value--fuel"
         />
-        <SummaryCard
-          label="Wind"
-          value={formatValue(latestObservation?.windSpeedMph ?? null, ' mph', 1)}
+        <WindCard
+          windSpeed={formatValue(latestObservation?.windSpeedMph ?? null, ' mph')}
+          windGust={formatValue(latestObservation?.windGustMph ?? null, ' mph')}
         />
-        <SummaryCard
-          label="Hourly Rain"
-          value={formatValue(latestObservation?.hourlyPrecipIn ?? null, ' in', 2)}
+        <RainCard
+          hourlyRain={formatValue(latestObservation?.hourlyPrecipIn ?? null, ' in', 2)}
+          past72hRain={formatValue(past72hRainIn, ' in', 2)}
         />
       </section>
 
@@ -224,13 +265,60 @@ function TitleBanner() {
 type SummaryCardProps = {
   label: string
   value: string
+  valueClassName?: string
 }
 
-function SummaryCard({ label, value }: SummaryCardProps) {
+function SummaryCard({ label, value, valueClassName }: SummaryCardProps) {
   return (
     <article className="summary-card">
       <p className="control-label">{label}</p>
-      <strong>{value}</strong>
+      <strong className={valueClassName}>{value}</strong>
+    </article>
+  )
+}
+
+type RainCardProps = {
+  hourlyRain: string
+  past72hRain: string
+}
+
+type WindCardProps = {
+  windSpeed: string
+  windGust: string
+}
+
+function WindCard({ windSpeed, windGust }: WindCardProps) {
+  return (
+    <article className="summary-card">
+      <p className="control-label">Wind</p>
+      <div className="stacked-card-values">
+        <div className="stacked-card-row">
+          <span>Current</span>
+          <strong>{windSpeed}</strong>
+        </div>
+        <div className="stacked-card-row">
+          <span>Gust</span>
+          <strong>{windGust}</strong>
+        </div>
+      </div>
+    </article>
+  )
+}
+
+function RainCard({ hourlyRain, past72hRain }: RainCardProps) {
+  return (
+    <article className="summary-card rain-card">
+      <p className="control-label">Rain</p>
+      <div className="stacked-card-values">
+        <div className="stacked-card-row">
+          <span>Hourly</span>
+          <strong>{hourlyRain}</strong>
+        </div>
+        <div className="stacked-card-row">
+          <span>Past 72h</span>
+          <strong>{past72hRain}</strong>
+        </div>
+      </div>
     </article>
   )
 }

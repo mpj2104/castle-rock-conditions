@@ -165,6 +165,46 @@ button {
   margin: 10px 0 0;
 }
 
+.summary-card strong.summary-value--temperature {
+  color: #d37036;
+}
+
+.summary-card strong.summary-value--humidity {
+  color: #6a8b5f;
+}
+
+.summary-card strong.summary-value--fuel {
+  color: #6d3e24;
+}
+
+.stacked-card-values {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.stacked-card-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.stacked-card-row span {
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.stacked-card-row strong {
+  margin: 0;
+  font-size: clamp(1.2rem, 2.1vw, 1.7rem);
+}
+
+.rain-card .stacked-card-row strong {
+  color: #3f76a8;
+}
+
 .control-row {
   display: block;
   margin-top: 18px;

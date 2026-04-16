@@ -118,7 +118,7 @@ export function HistoryChart({ observations }: HistoryChartProps) {
       animationDuration: 500,
       animationEasing: 'cubicOut',
       backgroundColor: 'transparent',
-      color: ['#d37036', '#6a8b5f', '#45708f', '#1f1f1b', '#b9a993', '#3f76a8'],
+      color: ['#d37036', '#6a8b5f', '#6d3e24', '#1f1f1b', '#b9a993', '#3f76a8'],
       grid: [
         { left: 70, right: 56, top: 40, height: '20%' },
         { left: 70, right: 56, top: '31%', height: '14%' },
@@ -312,7 +312,7 @@ export function HistoryChart({ observations }: HistoryChartProps) {
           markLine: {
             symbol: 'none',
             label: { show: false },
-            lineStyle: { color: '#45708f', type: 'dashed' },
+            lineStyle: { color: '#6d3e24', type: 'dashed' },
             data: [{ yAxis: 10 }],
           },
         },
