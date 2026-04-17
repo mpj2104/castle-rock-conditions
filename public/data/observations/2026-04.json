@@ -5416,5 +5416,47 @@
     "windDirectionCardinal": "N",
     "precipAccumIn": 48.78,
     "hourlyPrecipIn": 0
+  },
+  {
+    "timestamp": "2026-04-17T04:50:00Z",
+    "stationId": "BNDC1",
+    "source": "synoptic",
+    "temperatureF": 50,
+    "humidityPct": 37,
+    "fuelMoisturePct": 8.9,
+    "windSpeedMph": 5,
+    "windGustMph": 20,
+    "windDirectionDeg": 18,
+    "windDirectionCardinal": "NNE",
+    "precipAccumIn": 48.78,
+    "hourlyPrecipIn": 0
+  },
+  {
+    "timestamp": "2026-04-17T05:50:00Z",
+    "stationId": "BNDC1",
+    "source": "synoptic",
+    "temperatureF": 49,
+    "humidityPct": 30,
+    "fuelMoisturePct": 8.8,
+    "windSpeedMph": 6,
+    "windGustMph": 18,
+    "windDirectionDeg": 15,
+    "windDirectionCardinal": "NNE",
+    "precipAccumIn": 48.78,
+    "hourlyPrecipIn": 0
+  },
+  {
+    "timestamp": "2026-04-17T06:50:00Z",
+    "stationId": "BNDC1",
+    "source": "synoptic",
+    "temperatureF": 49,
+    "humidityPct": 27,
+    "fuelMoisturePct": 8.7,
+    "windSpeedMph": 5,
+    "windGustMph": 19,
+    "windDirectionDeg": 359,
+    "windDirectionCardinal": "N",
+    "precipAccumIn": 48.78,
+    "hourlyPrecipIn": 0
   }
 ]
