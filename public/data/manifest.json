@@ -3,7 +3,7 @@
   "stationName": "Ben Lomond RAWS",
   "source": "Synoptic Weather API archive",
   "timezone": "America/Los_Angeles",
-  "generatedAt": "2026-05-09T12:58:19.975Z",
+  "generatedAt": "2026-05-09T13:58:20.700Z",
   "latestObservationAt": "2026-05-09T12:50:00Z",
   "metrics": {
     "temperatureTargetF": 60,
