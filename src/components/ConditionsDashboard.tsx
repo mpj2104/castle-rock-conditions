@@ -26,6 +26,7 @@ type ClimbingStatus = 'green' | 'red' | 'neutral'
 type ForecastPeriod = {
   name: string
   startTime: string
+  endTime: string
   detailedForecast: string
 }
 
@@ -48,9 +49,25 @@ type NoaaForecastResponse = {
     periods?: Array<{
       name?: string
       startTime?: string
+      endTime?: string
       detailedForecast?: string
     }>
   }
+}
+
+function isNightForecastPeriod(period: ForecastPeriod): boolean {
+  const normalizedName = period.name.toLowerCase()
+  if (normalizedName.includes('night') || normalizedName.includes('tonight') || normalizedName.includes('overnight')) {
+    return true
+  }
+
+  const startTime = Date.parse(period.startTime)
+  if (!Number.isFinite(startTime)) {
+    return false
+  }
+
+  const startHour = new Date(startTime).getHours()
+  return startHour >= 18 || startHour < 6
 }
 
 function getClimbingStatus(observations: Observation[], latestObservation: Observation | null): ClimbingStatus {
@@ -229,6 +246,7 @@ export function ConditionsDashboard() {
           .map((period) => ({
             name: period.name ?? 'Forecast',
             startTime: period.startTime ?? '',
+            endTime: period.endTime ?? '',
             detailedForecast: period.detailedForecast ?? '',
           }))
           .filter((period) => period.detailedForecast.length > 0)
@@ -311,13 +329,98 @@ export function ConditionsDashboard() {
     return getPast72hRain(state.observations, latestObservation)
   }, [state, latestObservation])
 
-  const firstForecastPeriod = useMemo(() => {
+  const activeForecastPeriod = useMemo(() => {
     if (forecastState.status !== 'ready' || forecastState.periods.length === 0) {
       return null
     }
 
-    return forecastState.periods[0]
+    const now = Date.now()
+    const currentPeriod = forecastState.periods.find((period) => {
+      const startTime = Date.parse(period.startTime)
+      const endTime = Date.parse(period.endTime)
+      return Number.isFinite(startTime) && Number.isFinite(endTime) && startTime <= now && endTime > now
+    })
+
+    if (currentPeriod) {
+      const currentEndTime = Date.parse(currentPeriod.endTime)
+      const isTransitionalThisPeriod = currentPeriod.name.toLowerCase().startsWith('this ')
+      const nextPeriod = forecastState.periods.find((period) => {
+        const startTime = Date.parse(period.startTime)
+        return Number.isFinite(startTime) && startTime > now
+      })
+
+      if (isTransitionalThisPeriod && Number.isFinite(currentEndTime) && nextPeriod) {
+        const millisUntilCurrentEnds = currentEndTime - now
+        const handoffWindowMs = 3 * 60 * 60 * 1000
+        if (millisUntilCurrentEnds <= handoffWindowMs) {
+          return nextPeriod
+        }
+      }
+
+      return currentPeriod
+    }
+
+    const nextPeriod = forecastState.periods.find((period) => {
+      const startTime = Date.parse(period.startTime)
+      return Number.isFinite(startTime) && startTime > now
+    })
+
+    return nextPeriod ?? forecastState.periods[0]
   }, [forecastState])
+
+  const modalForecastPeriods = useMemo(() => {
+    if (forecastState.status !== 'ready' || forecastState.periods.length === 0) {
+      return []
+    }
+
+    if (!activeForecastPeriod) {
+      return forecastState.periods
+    }
+
+    const selectedIndex = forecastState.periods.findIndex(
+      (period) => period.name === activeForecastPeriod.name && period.startTime === activeForecastPeriod.startTime,
+    )
+
+    if (selectedIndex <= 0) {
+      return forecastState.periods
+    }
+
+    return forecastState.periods.slice(selectedIndex)
+  }, [forecastState, activeForecastPeriod])
+
+  const modalForecastRows = useMemo(() => {
+    const rows: Array<{ day: ForecastPeriod | null; night: ForecastPeriod | null }> = []
+    let pendingRow: { day: ForecastPeriod | null; night: ForecastPeriod | null } = { day: null, night: null }
+
+    for (const period of modalForecastPeriods) {
+      if (isNightForecastPeriod(period)) {
+        if (pendingRow.night) {
+          rows.push(pendingRow)
+          pendingRow = { day: null, night: period }
+          continue
+        }
+
+        pendingRow.night = period
+        rows.push(pendingRow)
+        pendingRow = { day: null, night: null }
+        continue
+      }
+
+      if (pendingRow.day) {
+        rows.push(pendingRow)
+        pendingRow = { day: period, night: null }
+        continue
+      }
+
+      pendingRow.day = period
+    }
+
+    if (pendingRow.day || pendingRow.night) {
+      rows.push(pendingRow)
+    }
+
+    return rows
+  }, [modalForecastPeriods])
 
   if (state.status === 'loading') {
     return (
@@ -374,10 +477,10 @@ export function ConditionsDashboard() {
         </article>
 
         <ForecastCard
-          period={firstForecastPeriod}
-          loading={(forecastState.status === 'loading' || forecastState.status === 'idle') && !firstForecastPeriod}
-          hasError={forecastState.status === 'error' && !firstForecastPeriod}
-          isRefreshing={isForecastRefreshing && firstForecastPeriod !== null}
+          period={activeForecastPeriod}
+          loading={(forecastState.status === 'loading' || forecastState.status === 'idle') && !activeForecastPeriod}
+          hasError={forecastState.status === 'error' && !activeForecastPeriod}
+          isRefreshing={isForecastRefreshing && activeForecastPeriod !== null}
           warning={forecastWarning}
           onOpen={() => {
             setIsForecastOpen(true)
@@ -463,12 +566,32 @@ export function ConditionsDashboard() {
                 <p className="forecast-updated">Updated {formatObservationTime(forecastState.updatedAt)}</p>
                 {forecastWarning ? <p className="forecast-warning">{forecastWarning}</p> : null}
                 <div className="forecast-period-list">
-                  {forecastState.periods.map((period) => (
-                    <article key={`${period.name}-${period.startTime}`} className="forecast-period-card">
-                      <h3>{period.name}</h3>
-                      <p>{period.detailedForecast}</p>
-                    </article>
-                  ))}
+                  {modalForecastRows.flatMap((row, rowIndex) => [
+                    row.day ? (
+                      <article key={`${row.day.name}-${row.day.startTime}`} className="forecast-period-card">
+                        <h3>{row.day.name}</h3>
+                        <p>{row.day.detailedForecast}</p>
+                      </article>
+                    ) : (
+                      <div
+                        key={`empty-day-${rowIndex}`}
+                        className="forecast-period-card forecast-period-card--empty"
+                        aria-hidden="true"
+                      />
+                    ),
+                    row.night ? (
+                      <article key={`${row.night.name}-${row.night.startTime}`} className="forecast-period-card">
+                        <h3>{row.night.name}</h3>
+                        <p>{row.night.detailedForecast}</p>
+                      </article>
+                    ) : (
+                      <div
+                        key={`empty-night-${rowIndex}`}
+                        className="forecast-period-card forecast-period-card--empty"
+                        aria-hidden="true"
+                      />
+                    ),
+                  ])}
                 </div>
               </div>
             ) : null}
