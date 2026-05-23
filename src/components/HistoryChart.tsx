@@ -30,6 +30,7 @@ echarts.use([
 
 type HistoryChartProps = {
   observations: Observation[]
+  compact?: boolean
 }
 
 function valueOrDash(value: number | null, suffix: string, digits = 0): string {
@@ -99,7 +100,7 @@ function findPrimeWindows(observations: Observation[]): Array<{ start: string; e
   return windows
 }
 
-export function HistoryChart({ observations }: HistoryChartProps) {
+export function HistoryChart({ observations, compact = false }: HistoryChartProps) {
   const chartRef = useRef<HTMLDivElement | null>(null)
 
   useEffect(() => {
@@ -119,38 +120,51 @@ export function HistoryChart({ observations }: HistoryChartProps) {
       animationEasing: 'cubicOut',
       backgroundColor: 'transparent',
       color: ['#d37036', '#6a8b5f', '#6d3e24', '#1f1f1b', '#b9a993', '#3f76a8'],
-      grid: [
-        { left: 70, right: 56, top: 40, height: '20%' },
-        { left: 70, right: 56, top: '31%', height: '14%' },
-        { left: 70, right: 56, top: '50%', height: '14%' },
-        { left: 70, right: 56, top: '69%', height: '14%' },
-      ],
+      grid: compact
+        ? [
+            { left: 52, right: 16, top: 14, height: '18%' },
+            { left: 52, right: 16, top: '29%', height: '14%' },
+            { left: 52, right: 16, top: '49%', height: '14%' },
+            { left: 52, right: 16, top: '69%', height: '14%' },
+          ]
+        : [
+            { left: 70, right: 56, top: 40, height: '20%' },
+            { left: 70, right: 56, top: '31%', height: '14%' },
+            { left: 70, right: 56, top: '50%', height: '14%' },
+            { left: 70, right: 56, top: '69%', height: '14%' },
+          ],
       dataZoom: [
         {
           type: 'inside',
           xAxisIndex: [0, 1, 2, 3],
           filterMode: 'none',
         },
-        {
-          type: 'slider',
-          xAxisIndex: [0, 1, 2, 3],
-          bottom: 8,
-          height: 26,
-          borderColor: 'rgba(39, 33, 20, 0.15)',
-          backgroundColor: 'rgba(255, 255, 255, 0.45)',
-          fillerColor: 'rgba(211, 112, 54, 0.12)',
-          handleStyle: {
-            color: '#d37036',
-          },
-        },
+        ...(
+          compact
+            ? []
+            : [{
+                type: 'slider',
+                xAxisIndex: [0, 1, 2, 3],
+                bottom: 8,
+                height: 26,
+                borderColor: 'rgba(39, 33, 20, 0.15)',
+                backgroundColor: 'rgba(255, 255, 255, 0.45)',
+                fillerColor: 'rgba(211, 112, 54, 0.12)',
+                handleStyle: {
+                  color: '#d37036',
+                },
+              }]
+        ),
       ],
       axisPointer: {
         link: [{ xAxisIndex: [0, 1, 2, 3] }],
         label: {
           backgroundColor: '#1f1f1b',
+          fontSize: compact ? 10 : 12,
         },
       },
       legend: {
+        show: !compact,
         top: 0,
         left: 70,
         itemGap: 18,
@@ -187,6 +201,7 @@ export function HistoryChart({ observations }: HistoryChartProps) {
         axisLabel: {
           color: '#645d52',
           hideOverlap: true,
+          fontSize: compact ? 10 : 12,
         },
         axisLine: {
           lineStyle: {
@@ -207,12 +222,13 @@ export function HistoryChart({ observations }: HistoryChartProps) {
         {
           type: 'value',
           gridIndex: 0,
-          name: 'Temp F',
+          name: compact ? 'Temp / RH %' : 'Temp F',
           nameLocation: 'middle',
           nameGap: 50,
           min: 0,
           max: 100,
-          axisLabel: { color: '#645d52' },
+          axisLabel: { color: '#645d52', fontSize: compact ? 10 : 12 },
+          nameTextStyle: { fontSize: compact ? 10 : 12 },
           splitLine: { show: false },
         },
         {
@@ -224,7 +240,9 @@ export function HistoryChart({ observations }: HistoryChartProps) {
           min: 0,
           max: 100,
           position: 'right',
-          axisLabel: { color: '#645d52' },
+          show: !compact,
+          axisLabel: { color: '#645d52', fontSize: compact ? 10 : 12 },
+          nameTextStyle: { fontSize: compact ? 10 : 12 },
           splitLine: { show: false },
         },
         {
@@ -233,7 +251,8 @@ export function HistoryChart({ observations }: HistoryChartProps) {
           name: 'Fuel %',
           nameLocation: 'middle',
           nameGap: 50,
-          axisLabel: { color: '#645d52' },
+          axisLabel: { color: '#645d52', fontSize: compact ? 10 : 12 },
+          nameTextStyle: { fontSize: compact ? 10 : 12 },
           splitLine: { show: false },
         },
         {
@@ -243,7 +262,8 @@ export function HistoryChart({ observations }: HistoryChartProps) {
           nameLocation: 'middle',
           nameGap: 50,
           min: 0,
-          axisLabel: { color: '#645d52' },
+          axisLabel: { color: '#645d52', fontSize: compact ? 10 : 12 },
+          nameTextStyle: { fontSize: compact ? 10 : 12 },
           splitLine: { show: false },
         },
         {
@@ -253,7 +273,8 @@ export function HistoryChart({ observations }: HistoryChartProps) {
           nameLocation: 'middle',
           nameGap: 50,
           min: 0,
-          axisLabel: { color: '#645d52' },
+          axisLabel: { color: '#645d52', fontSize: compact ? 10 : 12 },
+          nameTextStyle: { fontSize: compact ? 10 : 12 },
           splitLine: { show: false },
         },
       ],
@@ -287,7 +308,7 @@ export function HistoryChart({ observations }: HistoryChartProps) {
           smooth: true,
           showSymbol: false,
           xAxisIndex: 0,
-          yAxisIndex: 1,
+          yAxisIndex: compact ? 0 : 1,
           data: observations.map((observation) => [observation.timestamp, observation.humidityPct]),
           lineStyle: { width: 2.5 },
           markLine: {
@@ -361,7 +382,7 @@ export function HistoryChart({ observations }: HistoryChartProps) {
       resizeObserver.disconnect()
       chart.dispose()
     }
-  }, [observations])
+  }, [observations, compact])
 
   return <div className="chart-shell" ref={chartRef} />
 }

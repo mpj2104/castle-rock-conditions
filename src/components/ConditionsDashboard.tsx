@@ -98,6 +98,13 @@ export function ConditionsDashboard() {
   const [preset, setPreset] = useState<RangePreset>('7d')
   const [refreshTick, setRefreshTick] = useState(0)
   const [state, setState] = useState<LoadState>({ status: 'loading' })
+  const [isMobile, setIsMobile] = useState(() => {
+    if (typeof window === 'undefined') {
+      return false
+    }
+
+    return window.matchMedia('(max-width: 640px)').matches
+  })
   const [isForecastOpen, setIsForecastOpen] = useState(false)
   const [forecastState, setForecastState] = useState<ForecastState>({ status: 'idle' })
   const [isForecastRefreshing, setIsForecastRefreshing] = useState(false)
@@ -149,6 +156,23 @@ export function ConditionsDashboard() {
       cancelled = true
     }
   }, [preset, refreshTick])
+
+  useEffect(() => {
+    if (typeof window === 'undefined') {
+      return undefined
+    }
+
+    const mediaQuery = window.matchMedia('(max-width: 640px)')
+    const onChange = (event: MediaQueryListEvent) => {
+      setIsMobile(event.matches)
+    }
+
+    setIsMobile(mediaQuery.matches)
+    mediaQuery.addEventListener('change', onChange)
+    return () => {
+      mediaQuery.removeEventListener('change', onChange)
+    }
+  }, [])
 
   useEffect(() => {
     if (!isForecastOpen) {
@@ -330,7 +354,7 @@ export function ConditionsDashboard() {
       <TitleBanner />
 
       <section className="summary-grid">
-        <article className="summary-card snapshot-card latest-card">
+        <article className="summary-card snapshot-card latest-card latest-reading-card">
           <p className="control-label">Latest reading</p>
           <strong>{formatObservationTime(state.manifest.latestObservationAt)}</strong>
           <a
@@ -396,7 +420,7 @@ export function ConditionsDashboard() {
       </section>
 
       <section className="chart-panel">
-        <HistoryChart observations={deferredObservations} />
+        <HistoryChart observations={deferredObservations} compact={isMobile} />
       </section>
 
       {isForecastOpen ? (
@@ -497,7 +521,7 @@ type WindCardProps = {
 
 function TemperatureHumidityCard({ temperature, humidity, fuelMoisture }: TemperatureHumidityCardProps) {
   return (
-    <article className="summary-card conditions-card">
+    <article className="summary-card conditions-card conditions-summary-card">
       <p className="control-label">Conditions</p>
       <div className="stacked-card-values">
         <div className="stacked-card-row">
@@ -519,7 +543,7 @@ function TemperatureHumidityCard({ temperature, humidity, fuelMoisture }: Temper
 
 function ForecastCard({ period, loading, hasError, isRefreshing, warning, onOpen }: ForecastCardProps) {
   return (
-    <article className="summary-card forecast-card">
+    <article className="summary-card forecast-card forecast-summary-card">
       <p className="control-label">Forecast</p>
 
       {loading ? <p className="forecast-card-text">Loading detailed forecast...</p> : null}
@@ -551,7 +575,7 @@ function ForecastCard({ period, loading, hasError, isRefreshing, warning, onOpen
 
 function WindCard({ windSpeed, windGust }: WindCardProps) {
   return (
-    <article className="summary-card">
+    <article className="summary-card wind-summary-card">
       <p className="control-label">Wind</p>
       <div className="stacked-card-values">
         <div className="stacked-card-row">
@@ -569,7 +593,7 @@ function WindCard({ windSpeed, windGust }: WindCardProps) {
 
 function RainCard({ hourlyRain, past72hRain }: RainCardProps) {
   return (
-    <article className="summary-card rain-card">
+    <article className="summary-card rain-card rain-summary-card">
       <p className="control-label">Rain</p>
       <div className="stacked-card-values">
         <div className="stacked-card-row">

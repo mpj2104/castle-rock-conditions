@@ -424,21 +424,32 @@ button {
   .app-shell {
     width: min(100% - 18px, 1280px);
     padding-top: 10px;
+    padding-bottom: 28px;
   }
 
   .title-banner {
-    align-items: flex-start;
+    align-items: center;
     gap: 12px;
     margin-bottom: 14px;
   }
 
+  .title-banner-text {
+    gap: 4px;
+  }
+
+  .title-banner h1 {
+    font-size: clamp(1.6rem, 7vw, 2.25rem);
+  }
+
   .title-banner-art {
     gap: 10px;
+    overflow-x: auto;
+    padding-bottom: 2px;
   }
 
   .title-banner-art img {
     width: auto;
-    height: 132px;
+    height: 118px;
   }
 
   .hero-panel,
@@ -449,11 +460,83 @@ button {
   }
 
   .chart-panel {
-    padding: 18px;
+    padding: 14px;
   }
 
   .summary-grid {
     grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .summary-card,
+  .snapshot-card {
+    padding: 16px;
+  }
+
+  .summary-card strong {
+    font-size: clamp(1.35rem, 7.2vw, 1.85rem);
+  }
+
+  .stacked-card-values {
+    margin-top: 8px;
+    gap: 6px;
+  }
+
+  .stacked-card-row span {
+    font-size: 0.81rem;
+  }
+
+  .stacked-card-row strong {
+    font-size: clamp(1.05rem, 5.6vw, 1.35rem);
+  }
+
+  .latest-reading-card {
+    order: 1;
+  }
+
+  .conditions-summary-card {
+    order: 2;
+  }
+
+  .forecast-summary-card {
+    order: 3;
+  }
+
+  .rain-summary-card {
+    order: 4;
+  }
+
+  .wind-summary-card {
+    order: 5;
+  }
+
+  .forecast-card-text {
+    -webkit-line-clamp: 4;
+    font-size: 0.88rem;
+  }
+
+  .forecast-inline-link {
+    font-size: 0.92rem;
+    display: inline-block;
+    margin-top: 3px;
+  }
+
+  .forecast-meta,
+  .forecast-warning {
+    font-size: 0.76rem;
+  }
+
+  .control-row {
+    margin-top: 14px;
+  }
+
+  .preset-row {
+    gap: 8px;
+  }
+
+  .preset-button {
+    padding: 10px 13px;
+    min-height: 40px;
   }
 
   .forecast-modal {
@@ -465,7 +548,15 @@ button {
     grid-template-columns: 1fr;
   }
 
+  .forecast-period-card {
+    padding: 12px;
+  }
+
+  .forecast-period-card h3 {
+    font-size: 1.03rem;
+  }
+
   .chart-shell {
-    height: 920px;
+    height: 760px;
   }
 }
