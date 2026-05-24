@@ -63,7 +63,14 @@ function isNightForecastPeriod(period: ForecastPeriod): boolean {
   return startHour >= 18 || startHour < 6
 }
 
-function getForecastTemperatureBand(period: ForecastPeriod): 'cool' | 'warm' | 'hot' | 'neutral' {
+function getForecastTemperatureBand(period: ForecastPeriod): 'cool' | 'warm' | 'hot' | 'wet' | 'neutral' {
+  const hasPrecipitationMention = /(rain|drizzle|showers?|thunderstorms?|precip(?:itation)?|sleet|snow|flurr(?:y|ies)|sprinkles?)/i.test(
+    period.detailedForecast,
+  )
+  if (hasPrecipitationMention) {
+    return 'wet'
+  }
+
   const match = period.detailedForecast.match(/(?:high|low)\s(?:near|around)\s(-?\d+)/i)
   if (!match) {
     return 'neutral'

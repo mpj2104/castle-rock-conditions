@@ -395,6 +395,10 @@ button {
   background: #ffd6d1;
 }
 
+.forecast-period-card--wet {
+  background: #cfe5ff;
+}
+
 .forecast-period-card h3 {
   margin: 0;
   font-family: var(--display);
