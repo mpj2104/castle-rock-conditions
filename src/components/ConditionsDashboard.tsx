@@ -63,6 +63,28 @@ function isNightForecastPeriod(period: ForecastPeriod): boolean {
   return startHour >= 18 || startHour < 6
 }
 
+function getForecastTemperatureBand(period: ForecastPeriod): 'cool' | 'warm' | 'hot' | 'neutral' {
+  const match = period.detailedForecast.match(/(?:high|low)\s(?:near|around)\s(-?\d+)/i)
+  if (!match) {
+    return 'neutral'
+  }
+
+  const temperature = Number.parseInt(match[1], 10)
+  if (!Number.isFinite(temperature)) {
+    return 'neutral'
+  }
+
+  if (temperature <= 69) {
+    return 'cool'
+  }
+
+  if (temperature <= 79) {
+    return 'warm'
+  }
+
+  return 'hot'
+}
+
 function getClimbingStatus(observations: Observation[], latestObservation: Observation | null): ClimbingStatus {
   if (!latestObservation || latestObservation.fuelMoisturePct === null) return 'neutral'
 
@@ -564,7 +586,10 @@ export function ConditionsDashboard() {
                 <div className="forecast-period-list">
                   {modalForecastRows.flatMap((row, rowIndex) => [
                     row.day ? (
-                      <article key={`${row.day.name}-${row.day.startTime}`} className="forecast-period-card">
+                      <article
+                        key={`${row.day.name}-${row.day.startTime}`}
+                        className={`forecast-period-card forecast-period-card--${getForecastTemperatureBand(row.day)}`}
+                      >
                         <h3>{row.day.name}</h3>
                         <p>{row.day.detailedForecast}</p>
                       </article>
@@ -576,7 +601,10 @@ export function ConditionsDashboard() {
                       />
                     ),
                     row.night ? (
-                      <article key={`${row.night.name}-${row.night.startTime}`} className="forecast-period-card">
+                      <article
+                        key={`${row.night.name}-${row.night.startTime}`}
+                        className={`forecast-period-card forecast-period-card--${getForecastTemperatureBand(row.night)}`}
+                      >
                         <h3>{row.night.name}</h3>
                         <p>{row.night.detailedForecast}</p>
                       </article>

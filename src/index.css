@@ -383,6 +383,18 @@ button {
   padding: 14px;
 }
 
+.forecast-period-card--cool {
+  background: #dff5d8;
+}
+
+.forecast-period-card--warm {
+  background: #ffd8a8;
+}
+
+.forecast-period-card--hot {
+  background: #ffd6d1;
+}
+
 .forecast-period-card h3 {
   margin: 0;
   font-family: var(--display);
