@@ -17,7 +17,8 @@ const AUTO_REFRESH_MS = 5 * 60 * 1000
 const BANNER_IMAGES = ['crsp-hands.png', 'crsp-hands-2.png', 'crsp-hands-3.png']
 const IMAGE_BASE = `${import.meta.env.BASE_URL}images/`
 const RAIN_WINDOW_MS = 72 * 60 * 60 * 1000
-const NOAA_POINTS_URL = 'https://api.weather.gov/points/37.235,-122.1046'
+const MAPCLICK_JSON_URL =
+  'https://forecast.weather.gov/MapClick.php?lat=37.235&lon=-122.1046&FcstType=json&unit=0&lg=english'
 const NOAA_FORECAST_URL =
   'https://forecast.weather.gov/MapClick.php?lon=-122.10464186850001&lat=37.23500005365938#.ZGzoAuzMKDX'
 
@@ -36,22 +37,14 @@ type ForecastState =
   | { status: 'error'; message: string }
   | { status: 'ready'; periods: ForecastPeriod[]; updatedAt: string }
 
-type NoaaPointResponse = {
-  properties?: {
-    forecast?: string
+type MapClickForecastResponse = {
+  creationDate?: string
+  time?: {
+    startPeriodName?: string[]
+    startValidTime?: string[]
   }
-}
-
-type NoaaForecastResponse = {
-  properties?: {
-    updated?: string
-    updateTime?: string
-    periods?: Array<{
-      name?: string
-      startTime?: string
-      endTime?: string
-      detailedForecast?: string
-    }>
+  data?: {
+    text?: string[]
   }
 }
 
@@ -219,36 +212,39 @@ export function ConditionsDashboard() {
       }
 
       try {
-        const pointsResponse = await fetch(NOAA_POINTS_URL, {
-          headers: { Accept: 'application/geo+json' },
-          signal: controller.signal,
-        })
-        if (!pointsResponse.ok) {
-          throw new Error(`NOAA points request failed (${pointsResponse.status}).`)
-        }
-
-        const pointsData = (await pointsResponse.json()) as NoaaPointResponse
-        const forecastUrl = pointsData.properties?.forecast
-        if (!forecastUrl) {
-          throw new Error('NOAA points response did not include a forecast URL.')
-        }
-
-        const forecastResponse = await fetch(forecastUrl, {
-          headers: { Accept: 'application/geo+json' },
+        const forecastResponse = await fetch(MAPCLICK_JSON_URL, {
+          headers: { Accept: 'application/json' },
           signal: controller.signal,
         })
         if (!forecastResponse.ok) {
-          throw new Error(`NOAA forecast request failed (${forecastResponse.status}).`)
+          throw new Error(`NOAA MapClick request failed (${forecastResponse.status}).`)
         }
 
-        const forecastData = (await forecastResponse.json()) as NoaaForecastResponse
-        const periods = (forecastData.properties?.periods ?? [])
-          .map((period) => ({
-            name: period.name ?? 'Forecast',
-            startTime: period.startTime ?? '',
-            endTime: period.endTime ?? '',
-            detailedForecast: period.detailedForecast ?? '',
-          }))
+        const forecastData = (await forecastResponse.json()) as MapClickForecastResponse
+        const periodNames = forecastData.time?.startPeriodName ?? []
+        const periodStarts = forecastData.time?.startValidTime ?? []
+        const periodTexts = forecastData.data?.text ?? []
+
+        const periods = periodNames
+          .map((name, index) => {
+            const startTime = periodStarts[index] ?? ''
+            const nextStartTime = periodStarts[index + 1] ?? ''
+            const startMs = Date.parse(startTime)
+            const nextStartMs = Date.parse(nextStartTime)
+
+            const endTime = Number.isFinite(nextStartMs)
+              ? new Date(nextStartMs).toISOString()
+              : Number.isFinite(startMs)
+                ? new Date(startMs + 12 * 60 * 60 * 1000).toISOString()
+                : ''
+
+            return {
+              name: name || 'Forecast',
+              startTime,
+              endTime,
+              detailedForecast: (periodTexts[index] ?? '').trim(),
+            }
+          })
           .filter((period) => period.detailedForecast.length > 0)
 
         if (periods.length === 0) {
@@ -263,7 +259,7 @@ export function ConditionsDashboard() {
         setForecastState({
           status: 'ready',
           periods,
-          updatedAt: forecastData.properties?.updated ?? forecastData.properties?.updateTime ?? new Date().toISOString(),
+          updatedAt: forecastData.creationDate ?? new Date().toISOString(),
         })
       } catch (error) {
         if (controller.signal.aborted) {
