@@ -710,16 +710,14 @@ function ForecastCard({ period, loading, hasError, isRefreshing, warning, onOpen
 
       {period ? (
         <>
-          <p className="forecast-card-text">
-            {`${period.name}: ${period.detailedForecast} `}
-            <button
-              className="forecast-inline-link"
-              type="button"
-              onClick={onOpen}
-            >
-              Detailed forecasting...
-            </button>
-          </p>
+          <p className="forecast-card-text">{`${period.name}: ${period.detailedForecast}`}</p>
+          <button
+            className="forecast-inline-link"
+            type="button"
+            onClick={onOpen}
+          >
+            Detailed forecasting...
+          </button>
         </>
       ) : null}
 
