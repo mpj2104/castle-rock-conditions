@@ -37,5 +37,17 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
-      - id: deployment
+      - id: deployment_attempt_1
+        continue-on-error: true
         uses: actions/deploy-pages@v4
+      - id: deployment_attempt_2
+        if: steps.deployment_attempt_1.outcome == 'failure'
+        uses: actions/deploy-pages@v4
+      - id: deployment
+        if: always()
+        run: |
+          if [ "${{ steps.deployment_attempt_1.outcome }}" = "success" ]; then
+            echo "page_url=${{ steps.deployment_attempt_1.outputs.page_url }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "page_url=${{ steps.deployment_attempt_2.outputs.page_url }}" >> "$GITHUB_OUTPUT"
+          fi
