@@ -1,0 +1,16 @@
+[
+  {
+    "timestamp": "2026-09-01T00:50:00Z",
+    "stationId": "BNDC1",
+    "source": "synoptic",
+    "temperatureF": 60,
+    "humidityPct": 72,
+    "fuelMoisturePct": 8.2,
+    "windSpeedMph": 3,
+    "windGustMph": 10,
+    "windDirectionDeg": 286,
+    "windDirectionCardinal": "WNW",
+    "precipAccumIn": 53.91,
+    "hourlyPrecipIn": 0
+  }
+]
