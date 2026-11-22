@@ -7138,5 +7138,19 @@
     "windDirectionCardinal": "S",
     "precipAccumIn": 12.26,
     "hourlyPrecipIn": 0.01
+  },
+  {
+    "timestamp": "2026-11-22T06:50:00Z",
+    "stationId": "BNDC1",
+    "source": "synoptic",
+    "temperatureF": 45,
+    "humidityPct": 99,
+    "fuelMoisturePct": 24.9,
+    "windSpeedMph": 3,
+    "windGustMph": 10,
+    "windDirectionDeg": 148,
+    "windDirectionCardinal": "SSE",
+    "precipAccumIn": 12.29,
+    "hourlyPrecipIn": 0.03
   }
 ]
