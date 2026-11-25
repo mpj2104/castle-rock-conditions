@@ -3,8 +3,8 @@
   "stationName": "Ben Lomond RAWS",
   "source": "Synoptic Weather API archive",
   "timezone": "America/Los_Angeles",
-  "generatedAt": "2026-11-25T06:58:59.054Z",
-  "latestObservationAt": "2026-11-25T06:50:00Z",
+  "generatedAt": "2026-11-25T07:59:01.529Z",
+  "latestObservationAt": "2026-11-25T07:50:00Z",
   "metrics": {
     "temperatureTargetF": 60,
     "humidityTargetPct": 35
@@ -127,8 +127,8 @@
     {
       "file": "2026-11.json",
       "start": "2026-11-01T00:50:00Z",
-      "end": "2026-11-25T06:50:00Z",
-      "count": 583
+      "end": "2026-11-25T07:50:00Z",
+      "count": 584
     }
   ]
 }
